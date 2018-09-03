@@ -25,7 +25,7 @@ header {
 
 .slider-overlay {
   background-color: blue;
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -37,7 +37,7 @@ header {
   width: 100vw;
 }
 
-nav a{
+nav a {
   text-decoration: none;
   color: white;
 }
@@ -63,7 +63,7 @@ nav li {
   right: 0;
 }
 
-.offer-button-individual{
+.offer-button-individual {
   position: absolute;
   background: linear-gradient(to right, #FF8A00, #FF5E2B);
   border: none;
@@ -75,7 +75,7 @@ nav li {
   right: 0;
 }
 
-.offer-button-enterprise{
+.offer-button-enterprise {
   position: absolute;
   background: linear-gradient(to right, #FF8A00, #FF5E2B);
   border: none;
@@ -87,11 +87,11 @@ nav li {
   right: 0;
 }
 
-.offer-button:hover{
+.offer-button:hover {
   color: inherit;
 }
 
-.scroll-down{
+.scroll-down {
   position: absolute;
   z-index: 2;
   top: 90vh;
@@ -104,31 +104,45 @@ nav li {
   color: inherit;
 }
 
-.scroll-down:hover{
+.scroll-down:hover {
   color: inherit;
 }
 
 /* END OF HEADER -------------------------*/
+
 /* ABOUT US ------------------------------*/
 
-.services{
+.services {
   margin-top: 100px;
   background-color: white;
 }
 
-.services .six.columns{
-  margin:0;
-  padding:0;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
-.number-box{
+.item{
+  flex-basis: 50%;
+}
+
+.services .six.columns {
+  margin: 0;
+  padding: 0;
+}
+
+/* box1 */
+
+.number-box {
   border-bottom: 1px solid lightgrey;
   border-right: 1px solid lightgrey;
   text-align: right;
   margin-left: 130px;
 }
 
-.number-box span{
+.number-box span {
   position: absolute;
   font-size: 90px;
   color: #F17F42;
@@ -136,7 +150,7 @@ nav li {
   right: 45px;
 }
 
-.number-box p{
+.number-box p {
   font-size: 160px;
   color: lightgrey;
   position: relative;
@@ -144,20 +158,24 @@ nav li {
   margin-right: 50px;
 }
 
-.about-us-description{
+.about-us-description {
   padding: 20px;
   border-right: 1px solid lightgrey;
 }
 
-.about-us-description p{
+.about-us-description p {
   margin-right: 40px;
 }
 
-.number-box-2{
+/* box2 */
+
+.number-box-2 {
   margin-top: 100px;
+  margin-right: 130px;
+  border-bottom: 1px solid lightgrey;
 }
 
-.number-box-2 span{
+.number-box-2 span {
   position: absolute;
   font-size: 90px;
   color: #F17F42;
@@ -165,13 +183,110 @@ nav li {
   left: 0px;
 }
 
-.number-box-2 p{
+.number-box-2 p {
+  margin-left: 50px;
   font-size: 160px;
   color: lightgrey;
   position: relative;
 }
 
-.about-us-description-2 p{
+
+.about-us-description-2 p {
+  padding: 20px 20px 0px 50px;
+}
+
+/* box3 */
+.number-box-3 {
+  border-bottom: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  text-align: right;
+  margin-left: 130px;
+  margin-top: -140px;
+}
+
+.number-box-3 span {
+  position: absolute;
+  font-size: 90px;
+  color: #F17F42;
+  bottom: 0px;
+  right: 45px;
+}
+
+.number-box-3 p {
+  font-size: 160px;
+  color: lightgrey;
+  position: relative;
+  margin: 10px;
+  margin-right: 50px;
+}
+
+.about-us-description-3 {
   padding: 20px;
-  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
+
+.about-us-description-3 p {
+  margin-right: 40px;
+}
+
+
+/* box4 */
+
+.number-box-4 {
+  margin-right: 130px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.number-box-4 span {
+  position: absolute;
+  font-size: 90px;
+  color: #F17F42;
+  bottom: 0px;
+  left: 0px;
+}
+
+.number-box-4 p {
+  margin-left: 50px;
+  font-size: 160px;
+  color: lightgrey;
+  position: relative;
+}
+
+.about-us-description-4 p {
+  padding: 20px 20px 0px 50px;
+}
+
+/* box5 */
+
+.number-box-5 {
+  margin-top: -50px;
+  border-bottom: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  text-align: right;
+  margin-left: 130px;
+}
+
+.number-box-5 span {
+  position: absolute;
+  font-size: 90px;
+  color: #F17F42;
+  bottom: 0px;
+  right: 45px;
+}
+
+.number-box-5 p {
+  font-size: 160px;
+  color: lightgrey;
+  position: relative;
+  margin: 10px;
+  margin-right: 50px;
+}
+
+.about-us-description-5 {
+  padding: 20px;
+  border-right: 1px solid lightgrey;
+}
+
+.about-us-description-5 p {
+  margin-right: 40px;
 }
