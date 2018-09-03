@@ -290,3 +290,39 @@ nav li {
 .about-us-description-5 p {
   margin-right: 40px;
 }
+
+/* end of services */
+
+/* workers */
+
+.workers{
+    margin-top: 100px;
+}
+
+.workers .twelve.columns{
+  margin: 0;
+  padding: 0;
+}
+
+.images-of-workers img{
+  width: 50%;
+  float: left;
+}
+
+.legal-counsel-description{
+  background-color: #1D5F9C;
+  padding: 60px;
+}
+
+.legal-counsel-description p{
+  text-align: center;
+  color: white
+}
+.legal-counsel-description h6{
+  text-align: center;
+  color: #F17F42;
+}
+.legal-counsel-description h4{
+  text-align: center;
+  color: white
+}
