@@ -149,17 +149,17 @@
   <!-- WORKERS SECTION ------------------->
   <section class="workers">
     <div class="twelve columns images-of-workers">
-      <a class="lawyer-image" href="#"><img class="u-max-full-width" src="images/adwokat.jpg" alt="Ewa Frankiewicz-Chmielewska - adwokat"></a>
-      <a class="legal-counsel-image" href="#"><img class="u-max-full-width" src="images/radca.jpg" alt="Wojciech Chmielewski - adwokat"></a>
+      <img id="lawyer-image" src="images/adwokat.jpg" alt="Ewa Frankiewicz-Chmielewska - adwokat">
+      <img id="legal-counsel-image" src="images/radca.jpg" alt="Wojciech Chmielewski - adwokat">
     </div>
     <div style="clear:both;"></div>
 
     <div class="legal-counsel-description">
       <div class="container">
         <h3></h3>
-        <h4>Wojciech Chmielewski</h4>
-        <h6>Radca prawny</h6>
-        <p>Radca Prawny Wojciech Chmielewski odbywał aplikację przy Okręgowej Izbie Radców Prawnych w Bydgoszczy, a po złożeniu egzaminu radcowskiego z pomyślnym wynikiem został wpisany na listę radców prawnych przy Okręgowej Izbie w Bydgoszczy. Praktykę
+        <h4 id="name">Wojciech Chmielewski</h4>
+        <h6 id="title">Radca prawny</h6>
+        <p id="desc">Radca Prawny Wojciech Chmielewski odbywał aplikację przy Okręgowej Izbie Radców Prawnych w Bydgoszczy, a po złożeniu egzaminu radcowskiego z pomyślnym wynikiem został wpisany na listę radców prawnych przy Okręgowej Izbie w Bydgoszczy. Praktykę
           zawodową zdobywał pod patronatem Radcy Prawnego prowadzącego renomowaną kancelarię prawną. W chwili obecnej wykonuje zawód prowadząc własną Kancelarię Radcy Prawnego przy ul. Świętokrzyskiej 28a, 88-100 Inowrocław
         </p>
       </div>
@@ -167,6 +167,27 @@
   </section>
   <!-- END OD WORKERS SECTION ------------->
 
+  <script type="text/javascript">
+    window.onload = init;
+
+    function init() {
+      var lawyer = document.getElementById("lawyer-image");
+      var legalCounsel = document.getElementById("legal-counsel-image");
+      lawyer.onclick = function() {
+        document.getElementById("name").innerHTML = "Ewa Frankiewicz Chmielewka";
+        document.getElementById("title").innerHTML = "Adwokat";
+        document.getElementById("desc").innerHTML =
+          "Adwokat Ewa Frankiewicz-Chmielewska odbyła aplikację przy Okręgowej Radzie Adwokackiej w Bydgoszczy, a po złożeniu egzaminu adwokackiego z pomyślnym wynikiem została wpisana na listę adwokatów przy Okręgowej Radzie Adwokackiej w Bydgoszczy. Praktykę zawodową zdobyła pod patronatem Adwokata prowadzącego renomowaną kancelarię prawną."
+      };
+
+      legalCounsel.onclick = function() {
+        document.getElementById("name").innerHTML = "Wojciech Chmielewski";
+        document.getElementById("title").innerHTML = "Radca prawny";
+        document.getElementById("desc").innerHTML =
+          "Radca Prawny Wojciech Chmielewski odbywał aplikację przy Okręgowej Izbie Radców Prawnych w Bydgoszczy, a po złożeniu egzaminu radcowskiego z pomyślnym wynikiem został wpisany na listę radców prawnych przy Okręgowej Izbie w Bydgoszczy. Praktykę zawodową zdobywał pod patronatem Radcy Prawnego prowadzącego renomowaną kancelarię prawną. W chwili obecnej wykonuje zawód prowadząc własną Kancelarię Radcy Prawnego przy ul. Świętokrzyskiej 28a, 88-100 Inowrocław."
+      }
+    }
+  </script>
 </body>
 
 </html>
