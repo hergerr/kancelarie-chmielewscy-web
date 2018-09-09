@@ -1,19 +1,64 @@
 body {}
 
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+}
+
 /* HEADER -----------------------------*/
 
 header {
+  color: #F2F2F2;
+}
+
+header h2 {
+    font-size: 32px;
+}
+
+header h3, header h4 {
+    font-size: 24px;
+}
+
+header h4 {
+    padding-top: 50px;
+}
+
+header h5 {
+    font-family: 'EB Garamond', serif;
+    font-size: 24px;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 7px;
+    margin-left: -30px;
+    transition: 0.3s all ease-in;
+        color: white;
+}
+
+header h5:hover {
+  text-shadow: 0 0 5px white;
   color: white;
 }
 
+header h6 {
+    font-family: 'Lora', serif;
+    font-size: 11px;
+    text-align: center;
+    line-height: 11px;
+    margin-left: -30px;
+    color: white;
+}
+
 .top-nav {
-  padding: 30px 0px 30px 0px;
+  padding: 30px 0;
   position: absolute;
   z-index: 2;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   left: 0;
-  right: 0;
+  right: 0;  
 }
 
 #slider {
@@ -24,88 +69,146 @@ header {
 }
 
 .slider-overlay {
-  background-color: blue;
+  background: -moz-linear-gradient(-45deg, rgba(6,156,203,1) 0%, rgba(66,126,244,0.68) 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(6,156,203,1)), color-stop(100%,rgba(66,126,244,0.68)));
+  background: -webkit-linear-gradient(-45deg, rgba(6,156,203,1) 0%,rgba(66,126,244,0.68) 100%);
+  background: -o-linear-gradient(-45deg, rgba(6,156,203,1) 0%,rgba(66,126,244,0.68) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(6,156,203,1) 0%,rgba(66,126,244,0.68) 100%);
+  background: linear-gradient(135deg, rgba(6,156,203,1) 0%,rgba(66,126,244,0.68) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#069ccb', endColorstr='#ad427ef4',GradientType=1 );
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 2;
+  opacity: 0.5;
 }
 
 .hero-slider img {
   height: 100vh;
   width: 100vw;
+  -webkit-filter: grayscale(100%) brightness(0.8); 
+  filter: grayscale(100%) brightness(0.8);
 }
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: #F2F2F2; 
+}
+
+nav a:hover {
+  color: #1D5F9C;
+  transition: all 0.3s ease-in;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  float: right;
 }
 
 nav li {
-  display: inline;
-  margin-left: 20px;
+  display: block;
+  float: left;
+  width: 105px;
+  text-align: center;
+}
+
+nav li:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    margin: -32px auto;
+    background: white;
+    border-radius: 5px;
+    height: 40px;
+    box-shadow: 0 0 20px white;
+    -webkit-animation: slide-in 0.3s ease-in-out;
+    -moz-animation: slide-in 0.3s ease-in-out;
+    animation: slide-in 0.3s ease-in-out;
+}
+
+@keyframes slide-in {
+    0% { opacity: 0; transform: translateX(-50px); }
+    95% {transform: translateX(4px); opacity: 0.8;}
+    100% {transform: translateX(0); opacity: 1;}
 }
 
 .quotation {
   position: absolute;
   z-index: 2;
   top: 40vh;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+}
+
+.offer-button {
+  position: absolute;
+  border: none;
+  z-index: 2;   
+  width: 210px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #F2F2F2;
+  float: left;
+  border-radius: 5px;
+  transition: all 0.1s ease-in-out;
 }
 
 .offer-button-individual {
-  position: absolute;
-  background: linear-gradient(to right, #FF8A00, #FF5E2B);
-  border: none;
-  z-index: 2;
+  background: linear-gradient(to bottom right, #F17F42, #EC6A6A);
   top: 70vh;
-  padding: 0 70px 0 70px;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+}
+
+.offer-button-individual:hover {
+    box-shadow: 0 0 20px #EC6A6A;
 }
 
 .offer-button-enterprise {
-  position: absolute;
-  background: linear-gradient(to right, #FF8A00, #FF5E2B);
-  border: none;
-  z-index: 2;
-  top: 76vh;
-  padding: 0 53px 0 70px;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  background: linear-gradient(to bottom right, #2FBB70, #25BEAC);
+  top: 70vh;
+  left: 250px;
 }
 
-.offer-button:hover {
-  color: inherit;
+.offer-button-enterprise:hover {
+    box-shadow: 0 0 20px #25BEAC;
+}
+
+.scroll-icon {
+    display: inline-block;
+    width: 25px;
+    height: 35px;
+    border-radius: 12px;
+    border: 3px solid white;
+    box-sizing: border-box;
+}
+
+.scroll-icon::after {
+    display: inline-block;
+    content: '';
+    width: 3px;
+    height: 6px;
+    border-radius: 30%;
+    background-color: white;
+    -webkit-animation: scroll 1.2s ease-in-out infinite forwards;
+    -moz-animation: scroll 1.2s ease-in-out infinite forwards;
+    animation: scroll 1.2s ease-in-out infinite forwards;
+}
+
+@keyframes scroll {
+    0% { opacity: 0; transform: translateY(-8px); }
+    20% { opacity: 1; }
+    100% {transform: translateY(6px); opacity: 0;}
 }
 
 .scroll-down {
   position: absolute;
   z-index: 2;
   top: 90vh;
-  margin-left: auto;
-  margin-right: auto;
   left: 0;
   right: 0;
   text-align: center;
-  text-decoration: none;
-  color: inherit;
-}
-
-.scroll-down:hover {
-  color: inherit;
 }
 
 /* END OF HEADER -------------------------*/
@@ -113,8 +216,20 @@ nav li {
 /* ABOUT US ------------------------------*/
 
 .services {
-  margin-top: 100px;
-  background-color: white;
+  margin-top: -7px;
+  border-top: 3px solid #1D5F9C;
+}
+
+.services span, .services p {
+  color: #395D7E;
+}
+
+.services span {
+  color: #F17F42;
+}
+
+.services .lower-opacity {
+  opacity: 0.05;
 }
 
 .flex-container {
@@ -133,26 +248,32 @@ nav li {
   padding: 0;
 }
 
+.number-box p, 
+.number-box-2 p,
+.number-box-3 p,
+.number-box-4 p,
+.number-box-5 p {
+  font-family: 'Lora', serif;
+  color: #F5F7F8;
+}
+
 /* box1 */
 
 .number-box {
-  border-bottom: 1px solid lightgrey;
-  border-right: 1px solid lightgrey;
+  border-bottom: 1px solid #EDEDED;
+  border-right: 1px solid #EDEDED;
   text-align: right;
-  margin-left: 130px;
 }
 
 .number-box span {
   position: absolute;
   font-size: 90px;
-  color: #F17F42;
   bottom: 0px;
   right: 45px;
 }
 
 .number-box p {
   font-size: 160px;
-  color: lightgrey;
   position: relative;
   margin: 10px;
   margin-right: 50px;
@@ -160,7 +281,7 @@ nav li {
 
 .about-us-description {
   padding: 20px;
-  border-right: 1px solid lightgrey;
+  border-right: 1px solid #EDEDED;
 }
 
 .about-us-description p {
@@ -172,13 +293,12 @@ nav li {
 .number-box-2 {
   margin-top: 100px;
   margin-right: 130px;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #EDEDED;
 }
 
 .number-box-2 span {
   position: absolute;
   font-size: 90px;
-  color: #F17F42;
   bottom: 0px;
   left: 0px;
 }
@@ -186,7 +306,6 @@ nav li {
 .number-box-2 p {
   margin-left: 50px;
   font-size: 160px;
-  color: lightgrey;
   position: relative;
 }
 
@@ -197,8 +316,8 @@ nav li {
 
 /* box3 */
 .number-box-3 {
-  border-bottom: 1px solid lightgrey;
-  border-right: 1px solid lightgrey;
+  border-bottom: 1px solid #EDEDED;
+  border-right: 1px solid #EDEDED;
   text-align: right;
   margin-left: 130px;
   margin-top: -140px;
@@ -207,14 +326,12 @@ nav li {
 .number-box-3 span {
   position: absolute;
   font-size: 90px;
-  color: #F17F42;
   bottom: 0px;
   right: 45px;
 }
 
 .number-box-3 p {
   font-size: 160px;
-  color: lightgrey;
   position: relative;
   margin: 10px;
   margin-right: 50px;
@@ -222,25 +339,22 @@ nav li {
 
 .about-us-description-3 {
   padding: 20px;
-  border-right: 1px solid lightgrey;
+  border-right: 1px solid #EDEDED;
 }
 
 .about-us-description-3 p {
   margin-right: 40px;
 }
 
-
 /* box4 */
-
 .number-box-4 {
   margin-right: 130px;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #EDEDED;
 }
 
 .number-box-4 span {
   position: absolute;
   font-size: 90px;
-  color: #F17F42;
   bottom: 0px;
   left: 0px;
 }
@@ -248,7 +362,6 @@ nav li {
 .number-box-4 p {
   margin-left: 50px;
   font-size: 160px;
-  color: lightgrey;
   position: relative;
 }
 
@@ -260,8 +373,8 @@ nav li {
 
 .number-box-5 {
   margin-top: -50px;
-  border-bottom: 1px solid lightgrey;
-  border-right: 1px solid lightgrey;
+  border-bottom: 1px solid #EDEDED;
+  border-right: 1px solid #EDEDED;
   text-align: right;
   margin-left: 130px;
 }
@@ -269,14 +382,12 @@ nav li {
 .number-box-5 span {
   position: absolute;
   font-size: 90px;
-  color: #F17F42;
   bottom: 0px;
   right: 45px;
 }
 
 .number-box-5 p {
   font-size: 160px;
-  color: lightgrey;
   position: relative;
   margin: 10px;
   margin-right: 50px;
@@ -284,7 +395,7 @@ nav li {
 
 .about-us-description-5 {
   padding: 20px;
-  border-right: 1px solid lightgrey;
+  border-right: 1px solid #EDEDED;
 }
 
 .about-us-description-5 p {
@@ -316,13 +427,15 @@ nav li {
 
 .legal-counsel-description p{
   text-align: center;
-  color: white
+  color: white;
 }
 .legal-counsel-description h6{
   text-align: center;
   color: #F17F42;
+  font-size: 18px;
 }
 .legal-counsel-description h4{
   text-align: center;
-  color: white
+  color: white;
+  font-size: 24px;
 }
