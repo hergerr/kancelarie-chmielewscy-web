@@ -583,40 +583,65 @@ nav li:hover::after {
 }
 
 .general-desc-for-indiv {
-  width: 700px;
+  max-width: 700px;
   text-align: center;
-  margin: auto;
-  color: black;
-  margin-top: 50px;
 }
 
 .services-for-individuals h5 {
   text-align: center;
-  padding: 20px;
+	padding: 30px;
+	font-size: 18px;
+	color: #272321;
+}
+
+.services-for-individuals h2 {
+	margin: 50px 0;
+	font-size: 24px;
+	text-align: center;
 }
 
 .service {
   background: white;
   border-radius: 5px;
-  width: 100%;
-  min-height: 120px;
+	margin-bottom: 30px;
+  min-height: 142px;
+	position: relative;
+	cursor: pointer;
 }
 
 .service h5 {
   color: #395D7E;
-  font-size: 20px;
-  text-align: center;
+  font-size: 18px;
+	margin: auto;
 }
 
 .service-desc {
   display: none;
-  font-size: 10px;
-  margin-top: 10px;
-  padding: 5px;
-  color: black;
+	border-radius: 5px;
+  padding: 0 30px;
   background: white;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 5;
+	animation: 0.4s slide-down;
+	font-size: 14px;
+}
+
+.service-desc ul li {
+	padding: 5px;
+}
+
+.service-desc ul {
+	margin-top: 30px;
 }
 
 .service:hover .service-desc {
-  display: block;
+	display: block;
+}
+
+@keyframes slide-down {
+	0% {transform: translateY(-3px); opacity: 0}
+	100% { transform: translateY(0); opacity: 1}
 }
