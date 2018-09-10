@@ -38,17 +38,25 @@
         <nav>
           <div class="container top-nav">
             <div class="four columns">
-                <a href="index.html">
-                    <h5>CHMIELEWSCY</h5>
-                    <h6>Kancelaria Adwokacko-Radcowska</h6>
-                </a>
+              <a href="index.html">
+                <h5>CHMIELEWSCY</h5>
+                <h6>Kancelaria Adwokacko-Radcowska</h6>
+              </a>
             </div>
             <div class="eight columns">
               <ul>
-                <a href="#"><li>O&nbsp;nas</li></a>
-                <a href="#"><li>Zakres&nbsp;usług</li></a>
-                <a href="#"><li>Kontakt</li></a>
-                <a href="#"><li>Do&nbsp;pobrania</li></a>
+                <a href="#">
+                  <li>O&nbsp;nas</li>
+                </a>
+                <a href="#">
+                  <li>Zakres&nbsp;usług</li>
+                </a>
+                <a href="#">
+                  <li>Kontakt</li>
+                </a>
+                <a href="#">
+                  <li>Do&nbsp;pobrania</li>
+                </a>
               </ul>
             </div>
           </div>
@@ -64,7 +72,7 @@
             <button class="offer-button offer-button-individual" type="button">klient indywidualny</button>
             <button class="offer-button offer-button-enterprise" type="button">podmiot gospodarczy</button>
             <div class="scroll-down">
-                <div class="scroll-icon"></div>
+              <div class="scroll-icon"></div>
             </div>
           </div>
         </div>
@@ -168,8 +176,13 @@
   <!-- WORKERS SECTION ------------------->
   <section class="workers">
     <div class="twelve columns images-of-workers">
-      <img id="lawyer-image" src="images/adwokat.jpg" alt="Ewa Frankiewicz-Chmielewska - adwokat">
-      <img id="legal-counsel-image" src="images/radca.jpg" alt="Wojciech Chmielewski - adwokat">
+      <div class="lawyer-image-inactive">
+        <img id="lawyer-image" src="images/adwokat.jpg" alt="Ewa Frankiewicz-Chmielewska - adwokat">
+        <h4 class="worker-name">Ewa Frankiewicz-Chmielewska</h4>
+        <h6 class="worker-profession">Adwokat</h6>
+        </img>
+      </div>
+      <img id="legal-counsel-image" class="legal-counsel-image-inactive" src="images/radca.jpg" alt="Wojciech Chmielewski - adwokat">
     </div>
     <div style="clear:both;"></div>
 
@@ -184,7 +197,27 @@
       </div>
     </div>
   </section>
-  <!-- END OD WORKERS SECTION ------------->
+  <!-- END OF WORKERS SECTION ------------->
+
+  <!-- SECTION SERVICES FOR INDIVIDUALS ----------->
+  <section class="services-for-individuals">
+    <div class="background">
+      <div class="container">
+        <div class="tvelwe columns">
+          <h5>Oferta dla klientów indywidualnych</h5>
+          <p class="general-desc-for-indiv">Kancelaria oferuje kompleksową pomoc prawną Klientom indywidualnym w zakresie prawa cywilnego, prawa rodzinnego, prawa spółek, prawa pracy i ubezpieczeń społecznych, prawa medycznego, prawa administracyjnego, prawa budowlanego. Reprezentuje
+            Klientów przed wszystkimi sądami w tym także przed Sądem Najwyższym i organami administracji. Sporządza opinie prawne, udziela porad prawnych, przygotowuje pisma, zarówno na etapie przesądowym (np. wezwań), jak i pism procesowych, w tym środków
+            zaskarżenia (apelacje, zażalenia, odwołania, skargi itd.), negocjuje, opiniuje i sporządza projekty umów. Przeprowadza konsultacje prawne podczas których informujemy Klientów o skutkach prawnych podejmowanych przez nich decyzji, a także doradza
+            najlepsze rozwiązania prawne przedstawianych problemów.</p>
+            <h5>Kancelaria specjalizuje się przede wszystkim w następujących sprawach:</h5>
+        </div>
+        <div class="three columns">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END OF SECTION SERVICES FOR INDIVIDUALS ------------>
 
   <script type="text/javascript">
     window.onload = init;
