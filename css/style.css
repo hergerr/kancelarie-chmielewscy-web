@@ -73,22 +73,42 @@ header h6 {
   width: 100%;
   height: 100vh;
   position: relative;
-	background-image: url(http://placeimg.com/1920/1080/any);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	animation: 40s slide-change infinite;
-	border-bottom: 3px solid #1D5F9C;
+  background-image: url(http: //placeimg.com/1920/1080/any);
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: 40s slide-change infinite;
+  border-bottom: 3px solid #1D5F9C;
 }
 
 @keyframes slide-change {
-	0% { background-image: url(../images/slider1.jpg); }
-	28.3% { background-image: url(../images/slider1.jpg); }
-	33.3% { background-image: url(../images/slider2.jpg);}
-	61.6% { background-image: url(../images/slider2.jpg);}
-	66.6% { background-image: url(../images/slider3.jpg); }
-	95% { background-image: url(../images/slider4.jpg); }
-	100% { background-image: url(../images/slider4.jpg); }
+  0% {
+    background-image: url(../images/slider1.jpg);
+  }
+
+  28.3% {
+    background-image: url(../images/slider1.jpg);
+  }
+
+  33.3% {
+    background-image: url(../images/slider2.jpg);
+  }
+
+  61.6% {
+    background-image: url(../images/slider2.jpg);
+  }
+
+  66.6% {
+    background-image: url(../images/slider3.jpg);
+  }
+
+  95% {
+    background-image: url(../images/slider4.jpg);
+  }
+
+  100% {
+    background-image: url(../images/slider4.jpg);
+  }
 }
 
 .slider-overlay {
@@ -100,8 +120,8 @@ header h6 {
   background: linear-gradient(135deg, rgba(6, 156, 203, 1) 0%, rgba(66, 126, 244, 0.68) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#069ccb', endColorstr='#ad427ef4', GradientType=1);
   position: absolute;
-	width: 100%;
-	height: 100vh;
+  width: 100%;
+  height: 100vh;
   z-index: 2;
   opacity: 0.5;
 }
@@ -114,12 +134,12 @@ header h6 {
   z-index: 100;
   padding: 5px 0 8px 0;
   font-size: 12px;
-		width: 100%;
+  width: 100%;
 }
 
 .contact-bar::before {
   height: 20px;
-	width: 100%;
+  width: 100%;
   padding: 5px 0 8px 0;
   background-color: black;
   opacity: 0.13;
@@ -589,59 +609,66 @@ nav li:hover::after {
 
 .services-for-individuals h5 {
   text-align: center;
-	padding: 30px;
-	font-size: 18px;
-	color: #272321;
+  padding: 30px;
+  font-size: 18px;
+  color: #272321;
 }
 
 .services-for-individuals h2 {
-	margin: 50px 0;
-	font-size: 24px;
-	text-align: center;
+  margin: 50px 0;
+  font-size: 24px;
+  text-align: center;
 }
 
 .service {
   background: white;
   border-radius: 5px;
-	margin-bottom: 30px;
+  margin-bottom: 30px;
   min-height: 142px;
-	position: relative;
-	cursor: pointer;
+  position: relative;
+  cursor: pointer;
 }
 
 .service h5 {
   color: #395D7E;
   font-size: 18px;
-	margin: auto;
+  margin: auto;
 }
 
 .service-desc {
   display: none;
-	border-radius: 5px;
+  border-radius: 5px;
   padding: 0 30px;
   background: white;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	z-index: 5;
-	animation: 0.4s slide-down;
-	font-size: 14px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  animation: 0.4s slide-down;
+  font-size: 14px;
 }
 
 .service-desc ul li {
-	padding: 5px;
+  padding: 5px;
 }
 
 .service-desc ul {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 .service:hover .service-desc {
-	display: block;
+  display: block;
 }
 
 @keyframes slide-down {
-	0% {transform: translateY(-3px); opacity: 0}
-	100% { transform: translateY(0); opacity: 1}
+  0% {
+    transform: translateY(-3px);
+    opacity: 0
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1
+  }
 }
