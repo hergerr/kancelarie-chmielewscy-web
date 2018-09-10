@@ -53,12 +53,12 @@ header h6 {
 }
 
 .top-nav {
-  padding: 30px 0;
+  padding: 50px 0;
   position: absolute;
   z-index: 2;
   margin: 0 auto;
   left: 0;
-  right: 0;  
+  right: 0;
 }
 
 #slider {
@@ -88,13 +88,28 @@ header h6 {
 .hero-slider img {
   height: 100vh;
   width: 100vw;
-  -webkit-filter: grayscale(100%) brightness(0.8); 
+  -webkit-filter: grayscale(100%) brightness(0.8);
   filter: grayscale(100%) brightness(0.8);
+}
+
+.contact-bar{
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  height: 20px;
+  padding: 5px 0 8px 0;
+  /* padding: 10px 0 10px 0; */
+  background-color: darkblue;
+  opacity: 0.5;
+}
+
+.call-us{
+  margin-right: 30px;
 }
 
 nav a {
   text-decoration: none;
-  color: #F2F2F2; 
+  color: #F2F2F2;
 }
 
 nav a:hover {
@@ -145,7 +160,7 @@ nav li:hover::after {
 .offer-button {
   position: absolute;
   border: none;
-  z-index: 2;   
+  z-index: 2;
   width: 210px;
   height: 50px;
   font-size: 14px;
@@ -248,7 +263,7 @@ nav li:hover::after {
   padding: 0;
 }
 
-.number-box p, 
+.number-box p,
 .number-box-2 p,
 .number-box-3 p,
 .number-box-4 p,
@@ -422,7 +437,8 @@ nav li:hover::after {
 
 .legal-counsel-description{
   background-color: #1D5F9C;
-  padding: 60px;
+  height: 200px;
+  padding: 30px;
 }
 
 .legal-counsel-description p{
@@ -438,4 +454,16 @@ nav li:hover::after {
   text-align: center;
   color: white;
   font-size: 24px;
+}
+
+.legal-counsel-image-blur{
+  background-color: blue;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.lawyer-image-blur{
+  background-color: green;
+  z-index: 2;
+  opacity: 0.5;
 }
