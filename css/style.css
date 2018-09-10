@@ -111,21 +111,6 @@ header h6 {
   }
 }
 
-.slider-overlay {
-  background: -moz-linear-gradient(-45deg, rgba(6, 156, 203, 1) 0%, rgba(66, 126, 244, 0.68) 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(6, 156, 203, 1)), color-stop(100%, rgba(66, 126, 244, 0.68)));
-  background: -webkit-linear-gradient(-45deg, rgba(6, 156, 203, 1) 0%, rgba(66, 126, 244, 0.68) 100%);
-  background: -o-linear-gradient(-45deg, rgba(6, 156, 203, 1) 0%, rgba(66, 126, 244, 0.68) 100%);
-  background: -ms-linear-gradient(-45deg, rgba(6, 156, 203, 1) 0%, rgba(66, 126, 244, 0.68) 100%);
-  background: linear-gradient(135deg, rgba(6, 156, 203, 1) 0%, rgba(66, 126, 244, 0.68) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#069ccb', endColorstr='#ad427ef4', GradientType=1);
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  z-index: 2;
-  opacity: 0.5;
-}
-
 .contact-bar {
   position: absolute;
   top: 0;
@@ -575,7 +560,6 @@ nav li:hover::after {
 .lawyer-image-inactive {
   position: relative;
   background-color: green;
-  opacity: 0.5;
   z-index: 2;
 }
 
@@ -594,7 +578,7 @@ nav li:hover::after {
 /* end of workers section */
 /* services for individuals section */
 .background {
-  background-image: url('../images/slider3.jpg');
+  background-image: url('../images/individual_offer.jpg');
   min-height: 1200px;
   /* Center and scale the image nicely */
   background-position: center;
@@ -605,6 +589,7 @@ nav li:hover::after {
 .general-desc-for-indiv {
   max-width: 700px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .services-for-individuals h5 {
