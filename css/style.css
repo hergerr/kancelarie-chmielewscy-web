@@ -533,6 +533,7 @@ nav li:hover::after {
   background: white;
   border-radius: 5px;
   width: 100%;
+  min-height: 120px;
 }
 .service h5{
   color: #395D7E;
