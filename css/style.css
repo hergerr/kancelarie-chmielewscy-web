@@ -463,7 +463,7 @@ nav li:hover::after {
 
 .legal-counsel-description {
   background-color: #1D5F9C;
-  height: 200px;
+  min-height: 200px;
   padding: 30px;
 }
 
@@ -509,7 +509,7 @@ nav li:hover::after {
 
 .background {
   background-image: url('../images/slider3.jpg');
-  height: 100%;
+  min-height: 1200px;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -527,4 +527,28 @@ nav li:hover::after {
 .services-for-individuals h5{
   text-align: center;
   padding: 20px;
+}
+
+.service{
+  background: white;
+  border-radius: 5px;
+  width: 100%;
+}
+.service h5{
+  color: #395D7E;
+  font-size: 20px;
+  text-align: center;
+}
+
+.service-desc {
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  color: black;
+  background: white;
+}
+
+.service:hover .service-desc {
+  display: block;
 }
