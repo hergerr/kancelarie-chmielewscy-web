@@ -769,3 +769,34 @@ nav li:hover::after {
 }
 
 /* end of links */
+/* contact */
+.contact h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.cancelary,
+.ewa,
+.wojciech {
+  margin-bottom: 20px;
+}
+
+.skewed-container p {
+  max-width: 500px;
+}
+
+.skewed-container {
+  padding: 50px;
+  transform: skew(20deg, 0deg);
+  padding-bottom: 70px;
+}
+
+.skewed-box {
+  width: calc(100% - (1em + 20px) * 0, 364);
+  background-color: #edf6ff;
+  padding: 100px 100px 130px 120px;
+  transform: skew(-20deg, 0deg);
+  margin: -806px 0 0 600px;
+}
+
+/* end of contact */
