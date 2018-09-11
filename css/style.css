@@ -658,6 +658,10 @@ nav li:hover::after {
   }
 }
 
+/* end of services for individuals */
+
+/* services for enterprise */
+
 .background-enterprise {
   background-image: url('../images/firm_offer.jpg');
   min-height: 1000px;
@@ -701,3 +705,40 @@ nav li:hover::after {
   font-size: 18px;
   margin: auto;
 }
+
+/* end of services for entreprise */
+
+/* files */
+
+.files h3{
+  padding: 70px;
+  text-align: center;
+}
+
+.files h6{
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+.files img{
+  margin-right: 10px;
+}
+
+.files p{
+  color: grey;
+}
+
+.files a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.files a:hover{
+  color: #27ae61;
+}
+
+.second{
+  margin-top: 80px;
+}
+
+/* end of files */
