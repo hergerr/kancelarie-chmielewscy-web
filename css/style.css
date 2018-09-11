@@ -763,9 +763,17 @@ nav li:hover::after {
   background-color: #edf6ff;
 }
 
+.contact h4 {
+  margin-top: 100px;
+}
+
 .contact h6 {
   padding: 0;
   margin: 0;
+}
+
+.contact p {
+  max-width: 400px;
 }
 
 .cancelary,
@@ -774,30 +782,12 @@ nav li:hover::after {
   margin-bottom: 20px;
 }
 
-.skewed-container p {
-  max-width: 500px;
-}
-
-.skewed-container {
-  padding: 50px;
-  transform: skew(10deg, 0deg);
-  padding-bottom: 75px;
-}
-
-.skewed-box {
-  width: 40%;
-  background-color: #edf6ff;
-  padding: 100px 100px 130px 130px;
-  transform: skew(-10deg, 0deg);
-  margin: -806px 0 0 540px;
-}
-
 /* end of contact */
 /* footer */
-footer{
-    background-color: #1D5F9C;
-    text-align: center;
-    padding: 30px 0;
+footer {
+  background-color: #1D5F9C;
+  text-align: center;
+  padding: 30px 0;
 }
 
 footer a {
@@ -806,11 +796,11 @@ footer a {
   text-align: center;
 }
 
-footer a:hover{
+footer a:hover {
   color: grey;
 }
 
-footer h6{
+footer h6 {
   color: white;
   font-size: 16px;
 }
