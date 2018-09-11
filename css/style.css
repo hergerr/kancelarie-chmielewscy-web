@@ -74,7 +74,7 @@ header h6 {
   height: 100vh;
   position: relative;
   background-image: url(http: //placeimg.com/1920/1080/any);
-    background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   animation: 40s slide-change infinite;
@@ -656,4 +656,48 @@ nav li:hover::after {
     transform: translateY(0);
     opacity: 1
   }
+}
+
+.background-enterprise {
+  background-image: url('../images/firm_offer.jpg');
+  min-height: 1000px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-for-enterprises h5 {
+  text-align: center;
+  padding: 30px;
+  font-size: 18px;
+  color: #272321;
+  color: white
+}
+
+.services-for-enterprises h2 {
+  margin: 50px 0;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+}
+
+.general-desc-for-entrp{
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+
+.service-enterprise {
+  background: white;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  min-height: 142px;
+}
+
+.service-enterprise h5 {
+  color: #395D7E;
+  font-size: 18px;
+  margin: auto;
 }
