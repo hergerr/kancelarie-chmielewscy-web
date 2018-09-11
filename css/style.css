@@ -792,7 +792,7 @@ nav li:hover::after {
 .skewed-container {
   padding: 50px;
   transform: skew(10deg, 0deg);
-  padding-bottom: 70px;
+  padding-bottom: 75px;
 }
 
 .skewed-box {
