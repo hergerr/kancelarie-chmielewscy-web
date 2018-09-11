@@ -1,0 +1,93 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .second {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .second {
+    margin: 0;
+  }
+
+  .files .four.columns {
+    margin: 20px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .item {
+    flex-basis: 100%;
+  }
+
+  .number-box,
+  .number-box-2,
+  .number-box-3,
+  .number-box-4,
+  .number-box-5,
+  .about-us-description,
+  .about-us-description-3,
+  .about-us-description-5 {
+    border: none;
+    margin: 0;
+  }
+
+  .links .six.columns {
+    width: 100%;
+  }
+
+  .links h3 {
+    padding: 20px 0 10px 0;
+  }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .contact-bar {
+    display: none;
+  }
+
+  header h5, header h6 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  header .four.columns, header .eight.columns {
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .quotation {
+    left: 0;
+    right: 0;
+    top: 30vh;
+    text-align: center;
+  }
+
+  .offer-button {
+    left: 0;
+    right: 0;
+    top: 60vh;
+    margin: 0 auto;
+  }
+
+  .offer-button-enterprise {
+    margin-top: 70px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
