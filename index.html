@@ -150,28 +150,28 @@
 
   <!-- WORKERS SECTION ------------------->
   <section class="workers">
-    <div class="twelve columns images-of-workers">
-      <div class="lawyer-image-inactive">
-        <img id="lawyer-image" src="images/adwokat.jpg" alt="Ewa Frankiewicz-Chmielewska - adwokat">
-        <h4 class="worker-name">Ewa Frankiewicz-Chmielewska</h4>
-        <h6 class="worker-profession">Adwokat</h6>
-
-      </div>
-      <img id="legal-counsel-image" class="legal-counsel-image-inactive" src="images/radca.jpg" alt="Wojciech Chmielewski - adwokat">
-    </div>
-      <div style="clear:both;"></div>
-
-      <div class="legal-counsel-description">
-        <div class="container">
-
-          <h4 id="name">Wojciech Chmielewski</h4>
-          <h6 id="title">Radca prawny</h6>
-          <p id="desc">Radca Prawny Wojciech Chmielewski odbywał aplikację przy Okręgowej Izbie Radców Prawnych w Bydgoszczy, a po złożeniu egzaminu radcowskiego z pomyślnym wynikiem został wpisany na listę radców prawnych przy Okręgowej Izbie w
-            Bydgoszczy. Praktykę
-            zawodową zdobywał pod patronatem Radcy Prawnego prowadzącego renomowaną kancelarię prawną. W chwili obecnej wykonuje zawód prowadząc własną Kancelarię Radcy Prawnego przy ul. Świętokrzyskiej 28a, 88-100 Inowrocław
-          </p>
+    <div class="container">
+      <div class="twelve columns images-of-workers">
+        <div class="lawyer-image-inactive">
+          <img id="lawyer-image" src="images/worker-1-overlay.jpg" alt="Ewa Frankiewicz-Chmielewska - adwokat">
         </div>
+          <img id="legal-counsel-image" class="legal-counsel-image-inactive" src="images/worker-2.jpg" alt="Wojciech Chmielewski - adwokat">
       </div>
+        </div>
+
+        <div style="clear:both;"></div>
+
+        <div class="legal-counsel-description">
+          <div class="container">
+
+            <h4 id="name">Wojciech Chmielewski</h4>
+            <h6 id="title">Radca prawny</h6>
+            <p id="desc">Radca Prawny Wojciech Chmielewski odbywał aplikację przy Okręgowej Izbie Radców Prawnych w Bydgoszczy, a po złożeniu egzaminu radcowskiego z pomyślnym wynikiem został wpisany na listę radców prawnych przy Okręgowej Izbie w
+              Bydgoszczy. Praktykę
+              zawodową zdobywał pod patronatem Radcy Prawnego prowadzącego renomowaną kancelarię prawną. W chwili obecnej wykonuje zawód prowadząc własną Kancelarię Radcy Prawnego przy ul. Świętokrzyskiej 28a, 88-100 Inowrocław
+            </p>
+          </div>
+        </div>
   </section>
   <!-- END OF WORKERS SECTION ------------->
 
@@ -620,11 +620,14 @@
     function init() {
       var lawyer = document.getElementById("lawyer-image");
       var legalCounsel = document.getElementById("legal-counsel-image");
+
       lawyer.onmouseover = function() {
         document.getElementById("name").innerHTML = "Ewa Frankiewicz Chmielewka";
         document.getElementById("title").innerHTML = "Adwokat";
         document.getElementById("desc").innerHTML =
           "Adwokat Ewa Frankiewicz-Chmielewska odbyła aplikację przy Okręgowej Radzie Adwokackiej w Bydgoszczy, a po złożeniu egzaminu adwokackiego z pomyślnym wynikiem została wpisana na listę adwokatów przy Okręgowej Radzie Adwokackiej w Bydgoszczy. Praktykę zawodową zdobyła pod patronatem Adwokata prowadzącego renomowaną kancelarię prawną."
+        lawyer.src = "images/worker-1.jpg";
+        legalCounsel.src = "images/worker-2-overlay.jpg";
       };
 
       legalCounsel.onmouseover = function() {
@@ -632,6 +635,8 @@
         document.getElementById("title").innerHTML = "Radca prawny";
         document.getElementById("desc").innerHTML =
           "Radca Prawny Wojciech Chmielewski odbywał aplikację przy Okręgowej Izbie Radców Prawnych w Bydgoszczy, a po złożeniu egzaminu radcowskiego z pomyślnym wynikiem został wpisany na listę radców prawnych przy Okręgowej Izbie w Bydgoszczy. Praktykę zawodową zdobywał pod patronatem Radcy Prawnego prowadzącego renomowaną kancelarię prawną. W chwili obecnej wykonuje zawód prowadząc własną Kancelarię Radcy Prawnego przy ul. Świętokrzyskiej 28a, 88-100 Inowrocław."
+        lawyer.src = "images/worker-1-overlay.jpg";
+        legalCounsel.src = "images/worker-2.jpg";
       }
     }
   </script>

@@ -377,6 +377,14 @@ nav li:hover::after {
   color: #F5F7F8;
 }
 
+.number-box span,
+.number-box-2 span,
+.number-box-3 span,
+.number-box-4 span,
+.number-box-5 span {
+  font-family: 'Lora', serif;
+}
+
 /* box1 */
 .number-box {
   border-bottom: 1px solid #EDEDED;
@@ -524,13 +532,15 @@ nav li:hover::after {
   margin-top: 100px;
 }
 
-.workers .twelve.columns {
-  margin: 0;
-  padding: 0;
+.workers {
+  width: 100%;
+  height: 100%;
+  background: #1D5F9C;
 }
 
 .images-of-workers img {
-  width: 50%;
+  margin-top: 40px;
+  max-width: 50%;
   float: left;
 }
 
@@ -555,24 +565,6 @@ nav li:hover::after {
   text-align: center;
   color: white;
   font-size: 24px;
-}
-
-.lawyer-image-inactive {
-  position: relative;
-  background-color: green;
-  z-index: 2;
-}
-
-.worker-name {
-  position: absolute;
-  margin: auto
-}
-
-.worker-profession {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto
 }
 
 /* end of workers section */
