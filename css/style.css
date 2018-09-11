@@ -659,9 +659,7 @@ nav li:hover::after {
 }
 
 /* end of services for individuals */
-
 /* services for enterprise */
-
 .background-enterprise {
   background-image: url('../images/firm_offer.jpg');
   min-height: 1000px;
@@ -686,7 +684,7 @@ nav li:hover::after {
   color: white;
 }
 
-.general-desc-for-entrp{
+.general-desc-for-entrp {
   max-width: 700px;
   text-align: center;
   margin: 0 auto;
@@ -707,38 +705,67 @@ nav li:hover::after {
 }
 
 /* end of services for entreprise */
-
 /* files */
-
-.files h3{
+.files h3 {
   padding: 70px;
   text-align: center;
 }
 
-.files h6{
+.files h6 {
   margin: 0 0 5px 0;
   padding: 0;
 }
 
-.files img{
+.files img {
   margin-right: 10px;
 }
 
-.files p{
+.files p {
   color: grey;
 }
 
-.files a{
+.files a {
   text-decoration: none;
   color: inherit;
 }
 
-.files a:hover{
+.files a:hover {
   color: #27ae61;
 }
 
-.second{
+.second {
   margin-top: 80px;
+  padding-bottom: 100px;
 }
 
 /* end of files */
+/* links */
+.links {
+  background-color: #f8f8f8;
+}
+
+.links h3 {
+  text-align: center;
+  padding: 167px;
+  color: white;
+  background-color: #1D5F9C;
+}
+
+.useful-links {
+  background-color: #1D5F9C;
+}
+
+.links-list {
+  margin-top: 10px;
+}
+
+.links-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.links-list a:hover {
+  color: #27ae61;
+}
+
+/* end of links */
