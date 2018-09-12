@@ -72,6 +72,7 @@
           <div class="scroll-down">
             <div class="scroll-icon"></div>
           </div>
+          <a href="#" class="scroll"><i class="fas fa-arrow-up  fa-3x"></i></a>
         </div>
       </div>
     </div>
@@ -617,6 +618,8 @@
   <!-- END OF SECTION CONTACT --------------------->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/jquery.scrollTo.min.js"></script>
+
+  <!-- changing pictures -->
   <script type="text/javascript">
     window.onload = init;
 
@@ -644,6 +647,7 @@
     }
   </script>
 
+  <!-- smooth scroll -->
   <script>
     jQuery(function($) {
       $.scrollTo(0);
@@ -666,6 +670,14 @@
       $('#link6').click(function() {
         $.scrollTo($('.services-for-enterprises'), 2900);
       });
+      $('.scroll').click(function() {
+        $.scrollTo($('#link1'), 2000);
+      });
+    });
+
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 300) $('.scroll').fadeIn();
+      else $('.scroll').fadeOut();
     });
   </script>
 </body>

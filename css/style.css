@@ -807,3 +807,23 @@ footer h6 {
 }
 
 /* end of footer */
+
+.scroll {
+  text-decoration: none;
+  width: 64px;
+  height: 64px;
+  background: #27ae61;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  border-radius: 10px;
+  z-index: 2;
+  display: none;
+}
+
+.scroll i{
+  text-decoration: none;
+  color: white;
+  margin-left: 13px;
+  margin-top: 10px;
+}
