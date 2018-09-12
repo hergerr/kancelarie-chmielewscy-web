@@ -43,16 +43,16 @@
           </div>
           <div class="eight columns">
             <ul>
-              <a href="#">
+              <a id="link1" href="#">
                   <li>O&nbsp;nas</li>
                 </a>
-              <a href="#">
+              <a id="link2" href="#">
                   <li>Zakres&nbsp;usług</li>
                 </a>
-              <a href="#">
+              <a id="link3" href="#">
                   <li>Kontakt</li>
                 </a>
-              <a href="#">
+              <a id="link4" href="#">
                   <li>Do&nbsp;pobrania</li>
                 </a>
             </ul>
@@ -67,8 +67,8 @@
             <h3>Podaj mi fakty, a podam Ci prawo.</h3>
             <h4>Zaufanie i profesjonalizm</h4>
           </div>
-          <button class="offer-button offer-button-individual" type="button">klient indywidualny</button>
-          <button class="offer-button offer-button-enterprise" type="button">podmiot gospodarczy</button>
+          <a id="link5" href="#"><button class="offer-button offer-button-individual" type="button">klient indywidualny</button></a>
+          <a id="link6" href="#"><button class="offer-button offer-button-enterprise" type="button">podmiot gospodarczy</button></a>
           <div class="scroll-down">
             <div class="scroll-icon"></div>
           </div>
@@ -80,7 +80,7 @@
   <!-- END OF HEADER------------------------>
 
   <!-- ABOUS US SECTION--------------------->
-  <section class="services">
+  <section id="services" class="services">
     <div class="container">
 
       <div class="flex-container">
@@ -616,6 +616,7 @@
   </footer>
   <!-- END OF SECTION CONTACT --------------------->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/jquery.scrollTo.min.js"></script>
   <script type="text/javascript">
     window.onload = init;
 
@@ -641,6 +642,31 @@
         $("#legal-counsel-image").attr("src", "images/worker-2.jpg");
       });
     }
+  </script>
+
+  <script>
+    jQuery(function($) {
+      $.scrollTo(0);
+
+      $('#link1').click(function() {
+        $.scrollTo($('.workers'), 1500);
+      });
+      $('#link2').click(function() {
+        $.scrollTo($('.services'), 800);
+      });
+      $('#link3').click(function() {
+        $.scrollTo($('.contact'), 3500);
+      });
+      $('#link4').click(function() {
+        $.scrollTo($('.files'), 3000);
+      });
+      $('#link5').click(function() {
+        $.scrollTo($('.services-for-individuals'), 2100);
+      });
+      $('#link6').click(function() {
+        $.scrollTo($('.services-for-enterprises'), 2900);
+      });
+    });
   </script>
 </body>
 
