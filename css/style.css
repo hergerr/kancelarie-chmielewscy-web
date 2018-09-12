@@ -49,12 +49,11 @@ header h4 {
 header h5 {
   font-family: 'EB Garamond', serif;
   letter-spacing: 5px;
-  transition: 0.3s all ease-in;
+  transition: 0.3s color ease-in;
   color: white;
 }
 
 header h5:hover {
-  text-shadow: 0 0 5px white;
   color: white;
 }
 
@@ -79,7 +78,12 @@ header h6 {
   height: 100vh;
   position: relative;
   background-image: url(http: //placeimg.com/1920/1080/any);
-    background-size: cover;
+  background-size: cover;
+  background: #005382;
+  background: -moz-linear-gradient(-45deg,  #005382 0%, #002834 100%);
+  background: -webkit-linear-gradient(-45deg,  #005382 0%,#002834 100%);
+  background: linear-gradient(135deg,  #005382 0%,#002834 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005382', endColorstr='#002834',GradientType=1 );
   background-repeat: no-repeat;
   background-position: center;
   animation: 40s slide-change infinite;
@@ -254,11 +258,11 @@ header h6 {
 .hamburger-icon span {
   width: 28px;
   height: 4px;
-  background: white;
+  background: #DCDCDC;
   margin-bottom: 5px;
   display: block;
   border-radius: 2px;
-  box-shadow: 0 0 10px rgb(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.01);
   transition: all .3s ease-in-out;
   position: absolute;
   top: 0;
@@ -283,7 +287,6 @@ header h6 {
 .hamburger-icon input:checked + .spans span:nth-of-type(2) {
   transform: translateX(-5px);
   -webkit-transform: translateX(-5px);
-  ;
   opacity: 0;
 }
 
@@ -307,9 +310,9 @@ header h6 {
 
 .menu-hamburger ul {
   position: absolute;
-  top: 25%;
-  right: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -337,7 +340,7 @@ header h6 {
 .quotation {
   position: absolute;
   z-index: 2;
-  top: 30vh;
+  top: 200px;
 }
 
 .quotation h2 {
@@ -390,7 +393,7 @@ header h6 {
 
 .offer-button-individual {
   background: linear-gradient(to bottom right, #F17F42, #EC6A6A);
-  top: 70vh;
+  top: 650px;
   animation: slide-in-left 1s;
 }
 
@@ -400,7 +403,7 @@ header h6 {
 
 .offer-button-enterprise {
   background: linear-gradient(to bottom right, #2FBB70, #25BEAC);
-  top: 70vh;
+  top: 650px;
   left: 250px;
   animation: slide-in-left 2s;
 }
@@ -819,6 +822,7 @@ header h6 {
 .files h3 {
   padding: 70px;
   text-align: center;
+  font-size: 24px;
 }
 
 .files h6 {
@@ -855,10 +859,14 @@ header h6 {
 }
 
 .links h3 {
-  padding: 177px;
+  line-height: 419px;
   color: white;
   text-align: center;
   background-color: #1D5F9C;
+  font-size: 24px;
+  background: url(../images/links.png);
+  background-position: center;
+  margin: 0;
 }
 
 .useful-links {
@@ -892,6 +900,7 @@ header h6 {
 .contact h4 {
   margin-top: 100px;
   margin-left: 30px;
+  color: #1D5F9C;
 }
 
 .contact h6 {

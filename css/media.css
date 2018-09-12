@@ -90,7 +90,7 @@
   }
 
   .links h3 {
-    padding: 20px 0 10px 0;
+    line-height: 100px;
   }
 
   .links ul {
@@ -137,7 +137,7 @@
   .quotation {
     left: 0;
     right: 0;
-    top: 25vh;
+    top: 20vh;
     text-align: center;
   }
 
