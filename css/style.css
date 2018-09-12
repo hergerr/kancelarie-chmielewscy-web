@@ -807,7 +807,6 @@ footer h6 {
 }
 
 /* end of footer */
-
 .scroll {
   text-decoration: none;
   width: 64px;
@@ -821,7 +820,7 @@ footer h6 {
   display: none;
 }
 
-.scroll i{
+.scroll i {
   text-decoration: none;
   color: white;
   margin-left: 13px;
