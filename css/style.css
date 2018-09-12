@@ -222,6 +222,10 @@ header h6 {
   top: 8%;
   right: 80px;
   position: fixed;
+  z-index: 199;
+}
+
+#hamburger {
   display: none;
 }
 
@@ -256,10 +260,6 @@ header h6 {
   top: 0;
   left: 0;
   z-index: 21;
-}
-
-.hamburger-icon {
-  z-index: 199;
 }
 
 .spans span:nth-of-type(1) {
@@ -311,19 +311,18 @@ header h6 {
 
 .menu-hamburger li {
   list-style: none;
-  color: white;
   font-size: 1.5em;
-  transition: color 0.3s linear;
   font-family: 'Lora', serif;
-}
-
-.menu-hamburger li:hover {
-  list-style: none;
-  color: #F17F42;
 }
 
 .menu-hamburger a {
   text-decoration: none;
+  color: white;
+  transition: color 0.3s linear;
+}
+
+.menu-hamburger a:hover {
+  color: #F17F42;
 }
 
 .hamburger-icon input:checked ~ .menu-hamburger {
