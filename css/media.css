@@ -81,12 +81,35 @@
     margin: 0;
   }
 
+  .files .second {
+    margin-bottom: 30px;
+  }
+
   .links .six.columns {
     width: 100%;
   }
 
   .links h3 {
     padding: 20px 0 10px 0;
+  }
+
+  .links ul {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  .contact .six.columns {
+    width: 100%;
+  }
+
+  .contact .map {
+    height: 300px;
+    width: 100%;
+  }
+
+  .contact h4 {
+    margin-left: 30px;
+    margin-bottom: 10px;
   }
 }
 
@@ -114,7 +137,7 @@
   .quotation {
     left: 0;
     right: 0;
-    top: 35vh;
+    top: 25vh;
     text-align: center;
   }
 
