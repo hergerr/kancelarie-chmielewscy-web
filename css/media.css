@@ -107,7 +107,7 @@
     width: 100%;
   }
 
-  nav ul {
+  nav .menu-main {
     display: none;
   }
 
@@ -127,6 +127,10 @@
 
   .offer-button-enterprise {
     margin-top: 70px;
+  }
+
+  .hamburger-icon {
+    display: block;
   }
 }
 

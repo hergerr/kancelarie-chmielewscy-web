@@ -33,15 +33,16 @@
           <span>Wojciech Chmielewski <b>691 458 091</b></span>
         </div>
       </div>
+
       <nav>
         <div class="container top-nav">
-          <div class="four columns">
+          <div class="four columns logo">
             <a href="index.html">
                 <h5>CHMIELEWSCY</h5>
                 <h6>Kancelaria Adwokacko-Radcowska</h6>
               </a>
           </div>
-          <div class="eight columns">
+          <div class="eight columns menu-main">
             <ul>
               <a id="link1" href="#">
                   <li>O&nbsp;nas</li>
@@ -58,6 +59,26 @@
             </ul>
           </div>
         </div>
+
+        <div class="hamburger-icon" id="hamburger">
+          <input type="checkbox">
+          <div class="spans">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-hamburger">
+            <ul>
+              <a href="#workers"><li>O&nbsp;nas</li></a>
+              <a href="#services"><li>Zakres&nbsp;usług</li></a>
+              <a href="#contact"><li>Kontakt</li></a>
+              <a href="#files"><li>Do&nbsp;pobrania</li></a>
+            </ul>
+          </div>
+        </div>
+
+
+
       </nav>
 
       <div class="container">
@@ -65,7 +86,7 @@
           <div class="quotation">
             <h2>Da mihi factum, dabo tibi ius.</h2>
             <h3>Podaj mi fakty, a podam Ci prawo.</h3>
-            <h4>Zaufanie i profesjonalizm</h4>
+            <h4>Zaufanie i profesjonalizm.</h4>
           </div>
           <a id="link5" href="#"><button class="offer-button offer-button-individual" type="button">klient indywidualny</button></a>
           <a id="link6" href="#"><button class="offer-button offer-button-enterprise" type="button">podmiot gospodarczy</button></a>
@@ -149,7 +170,7 @@
   <!-- END OF ABOUT US SECTION -------------->
 
   <!-- WORKERS SECTION ------------------->
-  <section class="workers">
+  <section class="workers" id="workers">
     <div class="container">
       <div class="twelve columns images-of-workers">
         <div class="lawyer-image-inactive">
@@ -503,7 +524,7 @@
 
   <!-- SECTION FILES ------------------------>
 
-  <section class="files">
+  <section class="files" id="files">
     <div class="container">
       <div class="row">
         <div class="tvelwe columns">
@@ -574,7 +595,7 @@
   <!-- END OF LINKS SECTIONS -->
 
   <!-- SECTION CONTACT ---------------------->
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="row">
       <div class="six columns">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2412.650559487659!2d18.25669!3d52.792609!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4703508d01791d51%3A0x42fbcf3cfa3ee41e!2s%C5%9Awi%C4%99tokrzyska+28%2C+88-110+Inowroc%C5%82aw%2C+Polska!5e0!3m2!1spl!2s!4v1424301985980" width="100%" height="800" frameborder="0" class="map"></iframe>
@@ -678,6 +699,23 @@
     $(window).scroll(function() {
       if ($(this).scrollTop() > 300) $('.scroll').fadeIn();
       else $('.scroll').fadeOut();
+    });
+  </script>
+
+  <script>
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      var windowWidth = $(window).width();
+
+      if (scroll >= 1080) {
+        document.getElementById("hamburger").style.display = "block";
+        console.log(windowWidth);
+      }
+      if (scroll < 1080 && windowWidth >= 992) {
+        document.getElementById("hamburger").style.display = "none";
+      }
+
+
     });
   </script>
 </body>
