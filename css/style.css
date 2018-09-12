@@ -803,6 +803,7 @@ footer a:hover {
 footer h6 {
   color: white;
   font-size: 16px;
+  margin-bottom: 0;
 }
 
 /* end of footer */

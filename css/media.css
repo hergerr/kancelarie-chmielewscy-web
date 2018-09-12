@@ -11,10 +11,43 @@
   .quotation h4 {
     display: none;
   }
+
+  .second {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  .contact h4 {
+    margin: 0;
+  }
+
+  .map {
+    height: 500px;
+  }
+
+  .contact-data {
+    padding: 20px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .quotation {
+    top: 35vh;
+  }
+
+  .quotation h2 {
+    font-size: 14px;
+  }
+
+  .quotation h3 {
+    font-size: 12px;
+  }
+
+  .quotation h4 {
+    display: none;
+  }
+
   .second {
     margin: 0;
   }
@@ -81,7 +114,7 @@
   .quotation {
     left: 0;
     right: 0;
-    top: 30vh;
+    top: 35vh;
     text-align: center;
   }
 
