@@ -161,6 +161,10 @@
     margin: 0 auto;
   }
 
+  .services-for-individuals .four.columns{
+    width: 50%;
+  }
+
   .offer-button-enterprise {
     margin-top: 70px;
   }

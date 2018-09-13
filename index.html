@@ -93,7 +93,7 @@
           <div class="scroll-down">
             <div class="scroll-icon"></div>
           </div>
-          <a href="#" class="scroll"><i class="fas fa-arrow-up  fa-3x"></i></a>
+          <!-- <a href="#" class="scroll"><i class="fas fa-arrow-up  fa-3x"></i></a> -->
         </div>
       </div>
     </div>
@@ -215,7 +215,7 @@
 
         <div class="row">
           <div class="four columns">
-            <div class="service onclick="void(0)"">
+            <div class="service onclick=" void(0)"">
               <h5>Prawo spadkowe</h5>
               <span class="service-desc">
                 <ul>
@@ -652,14 +652,8 @@
         $("#desc").html(
           "Adwokat Ewa Frankiewicz-Chmielewska odbyła aplikację przy Okręgowej Radzie Adwokackiej w Bydgoszczy, a po złożeniu egzaminu adwokackiego z pomyślnym wynikiem została wpisana na listę adwokatów przy Okręgowej Radzie Adwokackiej w Bydgoszczy. Praktykę zawodową zdobyła pod patronatem Adwokata prowadzącego renomowaną kancelarię prawną."
         );
-        $("#lawyer-image").fadeOut(400, function() {
-            $("#lawyer-image").attr("src", "images/worker-1.jpg");
-          })
-          .fadeIn(400);
-        setTimeout(function(){$("#legal-counsel-image").fadeOut(400, function() {
-            $("#legal-counsel-image").attr("src", "images/worker-2-overlay.jpg")
-          })
-          .fadeIn(400);}, 500)
+        $("#lawyer-image").attr("src", "images/worker-1.jpg");
+        $("#legal-counsel-image").attr("src", "images/worker-2-overlay.jpg")
 
       });
 
@@ -669,16 +663,8 @@
         $("#desc").html(
           "Radca Prawny Wojciech Chmielewski odbywał aplikację przy Okręgowej Izbie Radców Prawnych w Bydgoszczy, a po złożeniu egzaminu radcowskiego z pomyślnym wynikiem został wpisany na listę radców prawnych przy Okręgowej Izbie w Bydgoszczy. Praktykę zawodową zdobywał pod patronatem Radcy Prawnego prowadzącego renomowaną kancelarię prawną. W chwili obecnej wykonuje zawód prowadząc własną Kancelarię Radcy Prawnego przy ul. Świętokrzyskiej 28a, 88-100 Inowrocław."
         );
-        $("#lawyer-image").fadeOut(400, function() {
-            $("#lawyer-image").attr("src", "images/worker-1-overlay.jpg");
-          })
-          .fadeIn(400);
-        setTimeout(function() {
-          $("#legal-counsel-image").fadeOut(400, function() {
-              $("#legal-counsel-image").attr("src", "images/worker-2.jpg")
-            })
-            .fadeIn(400)
-        }, 500);
+        $("#lawyer-image").attr("src", "images/worker-1-overlay.jpg");
+        $("#legal-counsel-image").attr("src", "images/worker-2.jpg")
       });
     }
   </script>
