@@ -262,7 +262,7 @@ header h6 {
   margin-bottom: 5px;
   display: block;
   border-radius: 2px;
-  box-shadow: 0 0 10px rgb(0, 0, 0, 0.01);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.05);
   transition: all .3s ease-in-out;
   position: absolute;
   top: 0;

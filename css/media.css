@@ -83,6 +83,11 @@
     margin: 0;
   }
 
+  .services p {
+    margin: 0;
+    padding: 0;
+  }
+
   .files .second {
     margin-bottom: 30px;
   }
