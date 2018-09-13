@@ -652,8 +652,14 @@
         $("#desc").html(
           "Adwokat Ewa Frankiewicz-Chmielewska odbyła aplikację przy Okręgowej Radzie Adwokackiej w Bydgoszczy, a po złożeniu egzaminu adwokackiego z pomyślnym wynikiem została wpisana na listę adwokatów przy Okręgowej Radzie Adwokackiej w Bydgoszczy. Praktykę zawodową zdobyła pod patronatem Adwokata prowadzącego renomowaną kancelarię prawną."
         );
-        $("#lawyer-image").attr("src", "images/worker-1.jpg");
-        $("#legal-counsel-image").attr("src", "images/worker-2-overlay.jpg");
+        $("#lawyer-image").fadeOut(400, function() {
+            $("#lawyer-image").attr("src", "images/worker-1.jpg");
+          })
+          .fadeIn(400);
+        $("#legal-counsel-image").fadeOut(400, function() {
+            $("#legal-counsel-image").attr("src", "images/worker-2-overlay.jpg")
+          })
+          .fadeIn(400);
       });
 
       $("#legal-counsel-image").mouseover(function() {
@@ -662,8 +668,14 @@
         $("#desc").html(
           "Radca Prawny Wojciech Chmielewski odbywał aplikację przy Okręgowej Izbie Radców Prawnych w Bydgoszczy, a po złożeniu egzaminu radcowskiego z pomyślnym wynikiem został wpisany na listę radców prawnych przy Okręgowej Izbie w Bydgoszczy. Praktykę zawodową zdobywał pod patronatem Radcy Prawnego prowadzącego renomowaną kancelarię prawną. W chwili obecnej wykonuje zawód prowadząc własną Kancelarię Radcy Prawnego przy ul. Świętokrzyskiej 28a, 88-100 Inowrocław."
         );
-        $("#lawyer-image").attr("src", "images/worker-1-overlay.jpg");
-        $("#legal-counsel-image").attr("src", "images/worker-2.jpg");
+        $("#lawyer-image").fadeOut(400, function() {
+            $("#lawyer-image").attr("src", "images/worker-1-overlay.jpg");
+          })
+          .fadeIn(400);
+        $("#legal-counsel-image").fadeOut(400, function() {
+            $("#legal-counsel-image").attr("src", "images/worker-2.jpg")
+          })
+          .fadeIn(400);
       });
     }
   </script>
@@ -691,6 +703,20 @@
       $('#link6').click(function() {
         $.scrollTo($('.services-for-enterprises'), 2900);
       });
+
+      $('#hamburger-workers').click(function() {
+        $.scrollTo($('.workers'), 1000);
+      });
+      $('#hamburger-services').click(function() {
+        $.scrollTo($('.services'), 1000);
+      });
+      $('#hamburger-contact').click(function() {
+        $.scrollTo($('.contact'), 1000);
+      });
+      $('#hamburger-files').click(function() {
+        $.scrollTo($('.files'), 1000);
+      });
+
       $('.scroll').click(function() {
         $.scrollTo($('.top-nav'), 2000);
       });
@@ -712,8 +738,7 @@
         document.getElementById('hamburger').style.display = "block";
       }
 
-      if (scroll < 900 && windowWidth >= 992 && !document.getElementById("hamburger-checkbox").checked)
-      {
+      if (scroll < 900 && windowWidth >= 992 && !document.getElementById("hamburger-checkbox").checked) {
         document.getElementById('hamburger').style.display = "none";
       };
 
@@ -725,16 +750,22 @@
 
 
     // disable checkbox when something in menu is clicked
-    function uncheck(){
+    function uncheck() {
       document.getElementById("hamburger-checkbox").checked = false;
     }
 
-    document.getElementById("hamburger-workers").onclick = function() {uncheck()};
-    document.getElementById("hamburger-services").onclick = function() {uncheck()};
-    document.getElementById("hamburger-contact").onclick = function() {uncheck()};
-    document.getElementById("hamburger-files").onclick = function() {uncheck()};
-
-
+    document.getElementById("hamburger-workers").onclick = function() {
+      uncheck()
+    };
+    document.getElementById("hamburger-services").onclick = function() {
+      uncheck()
+    };
+    document.getElementById("hamburger-contact").onclick = function() {
+      uncheck()
+    };
+    document.getElementById("hamburger-files").onclick = function() {
+      uncheck()
+    };
   </script>
 
   <script>
