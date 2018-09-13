@@ -1,17 +1,5 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .quotation h2 {
-    font-size: 20px;
-  }
-
-  .quotation h3 {
-    font-size: 16px;
-  }
-
-  .quotation h4 {
-    display: none;
-  }
-
   .second {
     margin-top: 0;
     padding-bottom: 0;
@@ -52,7 +40,6 @@
     margin: 0;
   }
 } */
-
 @media only screen and (max-width: 550px) {
   .second {
     margin: 0;
@@ -65,6 +52,21 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+  .quotation {
+    display: none;
+  }
+
+  .scroll {
+    right: 25px;
+    bottom: 25px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .scroll i{
+    font-size: 18px;
+  }
+
   .item {
     flex-basis: 100%;
   }
