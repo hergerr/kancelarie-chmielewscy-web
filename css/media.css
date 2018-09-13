@@ -52,9 +52,14 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  .quotation {
+  .quotation h2, .quotation h3 {
     display: none;
   }
+
+
+   .offer-button {
+    top: 50vh;
+   }
 
   .scroll {
     right: 25px;
@@ -150,14 +155,13 @@
   .quotation {
     left: 0;
     right: 0;
-    top: 20vh;
+    top: 28vh;
     text-align: center;
   }
 
-  .offer-button {
+ .offer-button {
     left: 0;
     right: 0;
-    top: 60vh;
     margin: 0 auto;
   }
 
