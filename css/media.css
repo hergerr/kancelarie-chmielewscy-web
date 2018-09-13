@@ -31,7 +31,7 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   .quotation {
     top: 35vh;
   }
@@ -51,7 +51,7 @@
   .second {
     margin: 0;
   }
-}
+} */
 
 @media only screen and (max-width: 550px) {
   .second {

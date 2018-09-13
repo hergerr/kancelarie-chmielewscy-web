@@ -875,6 +875,12 @@ header h6 {
 
 .links-list {
   padding: 30px 0 0 30px;
+  max-width: 400px;
+  margin-right: 0;
+
+}
+
+.links-list li{
 }
 
 .links-list a {
@@ -912,6 +918,10 @@ header h6 {
 .contact p {
   max-width: 400px;
   margin-left: 30px;
+}
+
+.contact-data{
+  max-width: 500px;
 }
 
 .cancelary,
