@@ -31,18 +31,6 @@ a:hover {
     width: 5px;
 }
 
-/* ::-webkit-scrollbar-track {
-    background: white;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #14416c;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #1D5F9C;
-} */
-
 ::-webkit-scrollbar-track {
     background: #14416c;
 }
