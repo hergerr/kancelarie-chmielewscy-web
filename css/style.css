@@ -27,6 +27,34 @@ a:hover {
   transition: 0.2s color ease-in-out;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* ::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #14416c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1D5F9C;
+} */
+
+::-webkit-scrollbar-track {
+    background: #14416c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2476c2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #68a8e3;
+}
+
 /* HEADER -----------------------------*/
 header {
   color: #F2F2F2;
