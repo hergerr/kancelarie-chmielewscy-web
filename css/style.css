@@ -78,7 +78,7 @@ header h6 {
   height: 100vh;
   position: relative;
   display: block;
-  background-image: url(http: //placeimg.com/1920/1080/any);
+  background-image: url(../images/slider1.jpg);
   background-size: cover;
   background: #005382;
   background: -moz-linear-gradient(-45deg,  #005382 0%, #002834 100%);
