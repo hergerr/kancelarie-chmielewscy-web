@@ -526,7 +526,8 @@ header h6 {
 .number-box-2 p,
 .number-box-3 p,
 .number-box-4 p,
-.number-box-5 p {
+.number-box-5 p,
+.number-box-6 p{
   font-family: 'Lora', serif;
   color: #F5F7F8;
 }
@@ -535,7 +536,8 @@ header h6 {
 .number-box-2 span,
 .number-box-3 span,
 .number-box-4 span,
-.number-box-5 span {
+.number-box-5 span,
+.number-box-6 span {
   font-family: 'Lora', serif;
 }
 
@@ -646,11 +648,12 @@ header h6 {
 
 .about-us-description-4 p {
   padding: 20px 20px 0px 50px;
+  /* border-left: .5px solid #EDEDED; */
 }
 
 /* box5 */
 .number-box-5 {
-  margin-top: -50px;
+  margin-top: -200px;
   border-bottom: 1px solid #EDEDED;
   border-right: 1px solid #EDEDED;
   text-align: right;
@@ -679,6 +682,31 @@ header h6 {
 .about-us-description-5 p {
   margin-right: 40px;
 }
+
+/* box6 */
+.number-box-6 {
+  margin-top: -7px;
+  margin-right: 130px;
+  border-bottom: 1px solid #EDEDED;
+}
+
+.number-box-6 span {
+  position: absolute;
+  font-size: 90px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.number-box-6 p {
+  margin-left: 50px;
+  font-size: 160px;
+  position: relative;
+}
+
+.about-us-description-6 p {
+  padding: 20px 20px 0px 50px;
+}
+
 
 /* end of services */
 /* workers */

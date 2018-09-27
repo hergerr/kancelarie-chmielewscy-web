@@ -52,14 +52,15 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  .quotation h2, .quotation h3 {
+
+  .quotation h2,
+  .quotation h3 {
     display: none;
   }
 
-
-   .offer-button {
+  .offer-button {
     top: 50vh;
-   }
+  }
 
   .scroll {
     right: 25px;
@@ -68,7 +69,7 @@
     height: 40px;
   }
 
-  .scroll i{
+  .scroll i {
     font-size: 18px;
   }
 
@@ -81,9 +82,12 @@
   .number-box-3,
   .number-box-4,
   .number-box-5,
+  .number-box-6,
   .about-us-description,
   .about-us-description-3,
-  .about-us-description-5 {
+  .about-us-description-4,
+  .about-us-description-5,
+  .about-us-description-6 {
     border: none;
     margin: 0;
   }
@@ -159,7 +163,7 @@
     text-align: center;
   }
 
- .offer-button {
+  .offer-button {
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -168,7 +172,6 @@
   /* .services-for-individuals .four.columns{
     width: 50% !important;
   } */
-
   .offer-button-enterprise {
     margin-top: 70px;
   }
