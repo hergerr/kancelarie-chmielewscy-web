@@ -92,6 +92,10 @@
     margin: 0;
   }
 
+  .about-us-description-6 p {
+    border: none;
+  }
+
   .services p {
     margin: 0;
     padding: 0;

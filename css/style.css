@@ -685,7 +685,7 @@ header h6 {
 
 /* box6 */
 .number-box-6 {
-  margin-top: -7px;
+  margin-top: -6px;
   margin-right: 130px;
   border-bottom: 1px solid #EDEDED;
 }
@@ -705,6 +705,7 @@ header h6 {
 
 .about-us-description-6 p {
   padding: 20px 20px 0px 50px;
+  border-left: 1px solid #EDEDED;
 }
 
 
