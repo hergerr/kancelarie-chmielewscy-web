@@ -866,6 +866,7 @@ header h6 {
 }
 
 .files img {
+  width: 60px;
   margin-right: 10px;
 }
 
