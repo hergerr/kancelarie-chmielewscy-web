@@ -890,6 +890,7 @@ header h6 {
 }
 
 .files h6 {
+  font-size: 14px;
   margin: 0 0 5px 0;
   padding: 0;
 }
@@ -913,7 +914,7 @@ header h6 {
 }
 
 .second {
-  margin-top: 20px;
+  margin-top: 40px;
   padding-bottom: 100px;
 }
 
