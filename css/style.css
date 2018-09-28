@@ -569,6 +569,7 @@ header h6 {
 
 .about-us-description p {
   margin-right: 40px;
+  text-align: justify;
 }
 
 /* box2 */
@@ -593,6 +594,7 @@ header h6 {
 
 .about-us-description-2 p {
   padding: 20px 20px 0px 50px;
+  text-align: justify;
 }
 
 /* box3 */
@@ -625,6 +627,7 @@ header h6 {
 
 .about-us-description-3 p {
   margin-right: 40px;
+  text-align: justify;
 }
 
 /* box4 */
@@ -648,7 +651,7 @@ header h6 {
 
 .about-us-description-4 p {
   padding: 20px 20px 0px 50px;
-  /* border-left: .5px solid #EDEDED; */
+  text-align: justify;
 }
 
 /* box5 */
@@ -681,6 +684,7 @@ header h6 {
 
 .about-us-description-5 p {
   margin-right: 40px;
+  text-align: justify;
 }
 
 /* box6 */
@@ -706,6 +710,7 @@ header h6 {
 .about-us-description-6 p {
   padding: 20px 20px 0px 50px;
   border-left: 1px solid #EDEDED;
+  text-align: justify;
 }
 
 
