@@ -48,6 +48,10 @@
   .files .four.columns {
     margin: 20px;
   }
+
+  .files h6{
+    max-width: 300px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
