@@ -739,7 +739,7 @@ header h6 {
 }
 
 .legal-counsel-description p {
-  text-align: center;
+  text-align: justify;
   color: white;
 }
 
@@ -768,7 +768,7 @@ header h6 {
 
 .general-desc-for-indiv {
   max-width: 700px;
-  text-align: center;
+  text-align: justify;
   margin: 0 auto;
 }
 
@@ -868,7 +868,7 @@ header h6 {
 
 .general-desc-for-entrp {
   max-width: 700px;
-  text-align: center;
+  text-align: justify;
   margin: 0 auto;
   color: white;
 }
