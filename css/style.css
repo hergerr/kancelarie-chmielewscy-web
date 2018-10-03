@@ -1,3 +1,83 @@
+@keyframes slide-change {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; margin-left: -5px; }
+  45% { left: -100%; }
+  50% { left: -200%; margin-left: -10px; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; margin-left: -15px; }
+  100% { left: -400%; }
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  95% {
+    transform: translateX(4px);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes opacity-0-to-1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(6px);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-3px);
+    opacity: 0
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1
+  }
+}
+
 body {}
 
 p,
@@ -95,53 +175,25 @@ header h6 {
 }
 
 .slider {
-  width: 100%;
   height: 100vh;
   position: relative;
-  display: block;
-  background-image: url(../images/slider1.jpg);
-  background-size: cover;
-  background: #005382;
-  background: -moz-linear-gradient(-45deg,  #005382 0%, #002834 100%);
-  background: -webkit-linear-gradient(-45deg,  #005382 0%,#002834 100%);
-  background: linear-gradient(135deg,  #005382 0%,#002834 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005382', endColorstr='#002834',GradientType=1 );
-  background-repeat: no-repeat;
-  background-position: center;
-  animation: 40s slide-change infinite;
-  -ms-animation: 40s slide-change infinite;
-  -webkit-animation: 40s slide-change infinite;
   border-bottom: 3px solid #1D5F9C;
+  overflow: hidden;
 }
 
-@keyframes slide-change {
-  0% {
-    background-image: url(../images/slider1.jpg);
-  }
+.sider figure img {
+  width: 20%;
+  float: left;
+}
 
-  28.3% {
-    background-image: url(../images/slider1.jpg);
-  }
-
-  33.3% {
-    background-image: url(../images/slider2.jpg);
-  }
-
-  61.6% {
-    background-image: url(../images/slider2.jpg);
-  }
-
-  66.6% {
-    background-image: url(../images/slider3.jpg);
-  }
-
-  95% {
-    background-image: url(../images/slider4.jpg);
-  }
-
-  100% {
-    background-image: url(../images/slider4.jpg);
-  }
+.slider figure {
+  position: absolute;
+  width: 700%;
+  margin-left: -5px;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slide-change infinite;
 }
 
 .contact-bar {
@@ -231,23 +283,6 @@ header h6 {
   -webkit-animation: slide-in 0.3s ease-in-out;
   -moz-animation: slide-in 0.3s ease-in-out;
   animation: slide-in 0.3s ease-in-out;
-}
-
-@keyframes slide-in {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-
-  95% {
-    transform: translateX(4px);
-    opacity: 0.8;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 .hamburger-icon {
@@ -385,28 +420,6 @@ header h6 {
   -webkit-animation: opacity-0-to-1 1s;
 }
 
-@keyframes opacity-0-to-1 {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slide-in-left {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 .offer-button {
   position: absolute;
   border: none;
@@ -464,22 +477,6 @@ header h6 {
   -webkit-animation: scroll 1.2s ease-in-out infinite forwards;
   -moz-animation: scroll 1.2s ease-in-out infinite forwards;
   animation: scroll 1.2s ease-in-out infinite forwards;
-}
-
-@keyframes scroll {
-  0% {
-    opacity: 0;
-    transform: translateY(-8px);
-  }
-
-  20% {
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(6px);
-    opacity: 0;
-  }
 }
 
 .scroll-down {
@@ -826,18 +823,6 @@ header h6 {
 
 .service:hover .service-desc {
   display: block;
-}
-
-@keyframes slide-down {
-  0% {
-    transform: translateY(-3px);
-    opacity: 0
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1
-  }
 }
 
 /* end of services for individuals */
