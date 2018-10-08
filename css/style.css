@@ -1,12 +1,16 @@
+/*=============
+  KEYFRAMES
+=============*/
+
 @keyframes slide-change {
-  0% { left: 0%; }
-  20% { left: 0%; }
-  25% { left: -100%; margin-left: -5px; }
-  45% { left: -100%; }
-  50% { left: -200%; margin-left: -10px; }
-  70% { left: -200%; }
-  75% { left: -300%; }
-  95% { left: -300%; margin-left: -15px; }
+  0% { left: 0%; margin-left: 0px;}
+  20% { left: 0%; margin-left: 0px;}
+  25% { left: -100%; margin-left: -10px; }
+  45% { left: -100%; margin-left: -10px;}
+  50% { left: -200%; margin-left: -20px; }
+  70% { left: -200%; margin-left: -20px;}
+  75% { left: -300%; margin-left: -30px;}
+  95% { left: -300%; margin-left: -30px; }
   100% { left: -400%; }
   }
 }
@@ -78,7 +82,9 @@
   }
 }
 
-body {}
+/*=============
+  MAIN STYLES
+=============*/
 
 p,
 span {
@@ -95,6 +101,13 @@ h6 {
   font-family: 'Lora', serif;
 }
 
+a:hover {
+  transition: 0.2s color ease-in-out;
+}
+
+/*=============
+  SELECTION
+=============*/
 ::selection {
   background: #25BEAC;
 }
@@ -103,12 +116,12 @@ h6 {
   background: #25BEAC;
 }
 
-a:hover {
-  transition: 0.2s color ease-in-out;
-}
+/*=============
+  SCROLLBAR
+=============*/
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -1005,6 +1018,17 @@ footer a {
 
 footer a:hover {
   color: grey;
+}
+
+footer .logo-container img {
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 50px 0 80px 0;
+}
+
+footer .second-logo {
+    position: relative;
+    top: 8px;
 }
 
 footer h6 {

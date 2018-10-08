@@ -1,4 +1,26 @@
 /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 550px) {
+  .second {
+    margin: 0;
+    padding-bottom: 30px;
+  }
+
+  .files .four.columns {
+    margin: 20px;
+  }
+
+  .files h6{
+    max-width: 300px;
+  }
+
+  footer .logo-container img {
+    max-width: 180px;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+  }
+}
+
+/* Small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .second {
     padding-bottom: 0;
@@ -14,43 +36,6 @@
 
   .contact-data {
     padding: 20px;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
-  .quotation {
-    top: 35vh;
-  }
-
-  .quotation h2 {
-    font-size: 14px;
-  }
-
-  .quotation h3 {
-    font-size: 12px;
-  }
-
-  .quotation h4 {
-    display: none;
-  }
-
-  .second {
-    margin: 0;
-  }
-} */
-@media only screen and (max-width: 550px) {
-  .second {
-    margin: 0;
-    padding-bottom: 30px;
-  }
-
-  .files .four.columns {
-    margin: 20px;
-  }
-
-  .files h6{
-    max-width: 300px;
   }
 }
 
@@ -177,9 +162,6 @@
     margin: 0 auto;
   }
 
-  /* .services-for-individuals .four.columns{
-    width: 50% !important;
-  } */
   .offer-button-enterprise {
     margin-top: 70px;
   }
@@ -188,6 +170,3 @@
     display: block;
   }
 }
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
