@@ -768,7 +768,7 @@ header h6 {
 /* end of workers section */
 /* services for individuals section */
 .background {
-  background-image: url('../images/individual_offer.jpg');
+  background-image: url('../images/individual_offer2.jpg');
   min-height: 1200px;
   /* Center and scale the image nicely */
   background-position: center;
@@ -780,19 +780,21 @@ header h6 {
   max-width: 700px;
   text-align: justify;
   margin: 0 auto;
+  color: white;
 }
 
 .services-for-individuals h5 {
   text-align: center;
   padding: 30px;
   font-size: 18px;
-  color: #272321;
+  color: white;
 }
 
 .services-for-individuals h2 {
   margin: 50px 0;
   font-size: 24px;
   text-align: center;
+  color: white;
 }
 
 .service {
