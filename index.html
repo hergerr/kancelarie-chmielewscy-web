@@ -14,6 +14,7 @@
   <link href="css/skeleton.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/media.css" rel="stylesheet">
+  <link href="css/slider-def.css" rel="stylesheet">
 
   <!-- FONTS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -24,15 +25,8 @@
 
   <!-- HEADER----------------------->
   <header>
-    <div class="slider">
-      <figure>
-        <img src="images/slider1.jpg">
-        <img src="images/slider2.jpg">
-        <img src="images/slider3.jpg">
-        <img src="images/slider4.jpg">
-        <img src="images/slider1.jpg">
-      </figure>
-
+    <div class="hero-slider">
+      <div id="slider">
         <div class="contact-bar">
           <div class="container">
             <span class="call-us">Zadzwoń do nas!</span>
@@ -104,8 +98,37 @@
             <!-- <a href="#" class="scroll"><i class="fas fa-arrow-up  fa-3x"></i></a> -->
           </div>
         </div>
+
+        <div class="slides">
+          <!-- First slide -->
+          <div class="slider">
+            <div class="images">
+              <img class="slider-photo" src="images/slider1.jpg" alt="surgeons on work">
+            </div>
+          </div>
+          <!-- Second slide -->
+          <div class="slider">
+            <div class="images">
+              <img class="slider-photo" src="images/slider2.jpg" alt="examining roentgen's scan">
+            </div>
+          </div>
+          <!-- Third slide -->
+          <div class="slider">
+            <div class="images">
+              <img class="slider-photo" src="images/slider3.jpg" alt="puppy at vet">
+            </div>
+          </div>
+          <!-- Fourth slide -->
+          <div class="slider">
+            <div class="images">
+              <img class="slider-photo" src="images/slider4.jpg" alt="doctor">
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-    </div>
+
   </header>
   <!-- END OF HEADER------------------------>
 
@@ -150,7 +173,8 @@
             <p>3<span>3</span></p>
           </div>
           <div class="about-us-description-3">
-            <p>Atutem Kancelarii jest <b>indywidualne</b> i&nbsp;elastyczne podejście do każdej sprawy, zarówno pod względem merytorycznym jak i&nbsp;finansowym. Z&nbsp;założenia Kancelaria pragnie pomagać klientom w&nbsp;sposób praktyczny i<b>&nbsp;efektywny</b>. Dlatego też stara się
+            <p>Atutem Kancelarii jest <b>indywidualne</b> i&nbsp;elastyczne podejście do każdej sprawy, zarówno pod względem merytorycznym jak i&nbsp;finansowym. Z&nbsp;założenia Kancelaria pragnie pomagać klientom w&nbsp;sposób praktyczny i<b>&nbsp;efektywny</b>.
+              Dlatego też stara się
               zaoferować najlepsze rozwiązania prawne, odpowiadające konkretnym potrzebom klienta. Kancelaria codziennie podejmuje nowe wyzwania. Dlatego też działa szybko i&nbsp;precyzyjnie nawet pod presją czasu.</p>
           </div>
         </div>
@@ -160,9 +184,11 @@
             <p>4<span>4</span></p>
           </div>
           <div class="about-us-description-4">
-            <p>Celem naszej Kancelarii jest świadczenie usług na <b>najwyższym poziomie</b>, z jak najdalej idącym uwzględnieniem interesu naszych Klientów i&nbsp;zabezpieczeniu ich praw. Naszą intencją jest prowadzenie spraw w taki sposób, abyśmy mogli
+            <p>Celem naszej Kancelarii jest świadczenie usług na <b>najwyższym poziomie</b>, z jak najdalej idącym uwzględnieniem interesu naszych Klientów i&nbsp;zabezpieczeniu ich praw. Naszą intencją jest prowadzenie spraw w taki sposób, abyśmy
+              mogli
               zaproponować najlepsze rozwiązania stawianych przed nami zadań. Posiadamy niezbędną wiedzę i<b>&nbsp;doświadczenie</b>, które pozwala nam na skuteczne prowadzenie powierzonych przez Państwa spraw.
-              <br>Prowadząc Sprawy klientów kancelaria kieruję się zasadami etyki adwokackiej i&nbspradcowskiej , a&nbsp;w&nbsp;szczególności według najlepszej woli i&nbsp;wiedzy, z należytą uczciwością, sumiennością i&nbsp;gorliwością. Ponadto przy wykonywaniu czynności
+              <br>Prowadząc Sprawy klientów kancelaria kieruję się zasadami etyki adwokackiej i&nbspradcowskiej , a&nbsp;w&nbsp;szczególności według najlepszej woli i&nbsp;wiedzy, z należytą uczciwością, sumiennością i&nbsp;gorliwością. Ponadto przy
+              wykonywaniu czynności
               zawodowych kierujemy się zasadami rzeczowości.
             </p>
           </div>
@@ -173,7 +199,8 @@
             <p>5<span>5</span></p>
           </div>
           <div class="about-us-description-5">
-            <p>Kancelaria zapewnia wszechstronną pomoc prawną adresowaną do <b>osób fizycznych</b>, jak i&nbsp;<b>podmiotów gospodarczych</b>.<br>Misją Kancelarii jest budowanie trwałych relacji z&nbsp;Klientami, opartych na zasadach uczciwości w działaniu, pełnym zrozumieniu
+            <p>Kancelaria zapewnia wszechstronną pomoc prawną adresowaną do <b>osób fizycznych</b>, jak i&nbsp;<b>podmiotów gospodarczych</b>.<br>Misją Kancelarii jest budowanie trwałych relacji z&nbsp;Klientami, opartych na zasadach uczciwości w
+              działaniu, pełnym zrozumieniu
               ich wizji biznesowej, całkowitym zaufaniu oraz nieskazitelnym warsztacie pracy prawniczej.</p>
           </div>
         </div>
@@ -183,7 +210,8 @@
             <p>6<span>6</span></p>
           </div>
           <div class="about-us-description-6">
-            <p>Angażujemy się w pracę <b>pro publico bono</b>. Wierzymy, że to odpowiedni sposób, by dzielić się wiedzą i&nbsp;doświadczeniem z osobami, które ze względu na sytuację życiową nie są w stanie ponieść kosztów profesjonalnej obsługi prawnej</p>
+            <p>Angażujemy się w pracę <b>pro publico bono</b>. Wierzymy, że to odpowiedni sposób, by dzielić się wiedzą i&nbsp;doświadczeniem z osobami, które ze względu na sytuację życiową nie są w stanie ponieść kosztów profesjonalnej obsługi
+              prawnej</p>
           </div>
         </div>
 
@@ -200,23 +228,23 @@
         <div class="lawyer-image-inactive">
           <img id="lawyer-image" src="images/worker-1-overlay.jpg" alt="Ewa Frankiewicz-Chmielewska - adwokat">
         </div>
-          <img id="legal-counsel-image" class="legal-counsel-image-inactive" src="images/worker-2.jpg" alt="Wojciech Chmielewski - adwokat">
+        <img id="legal-counsel-image" class="legal-counsel-image-inactive" src="images/worker-2.jpg" alt="Wojciech Chmielewski - adwokat">
       </div>
-        </div>
+    </div>
 
-        <div style="clear:both;"></div>
+    <div style="clear:both;"></div>
 
-        <div class="legal-counsel-description">
-          <div class="container">
+    <div class="legal-counsel-description">
+      <div class="container">
 
-            <h4 id="name">Wojciech Chmielewski</h4>
-            <h6 id="title">Radca Prawny</h6>
-            <p id="desc">Radca Prawny Wojciech Chmielewski odbywał aplikację przy Okręgowej Izbie Radców Prawnych w Bydgoszczy, a&nbsp;po złożeniu egzaminu radcowskiego z&nbsp;pomyślnym wynikiem został wpisany na listę radców prawnych przy Okręgowej
-              Izbie w&nbsp;Bydgoszczy. Praktykę
-              zawodową zdobywał pod patronatem Radcy Prawnego prowadzącego renomowaną kancelarię prawną. W chwili obecnej wykonuje zawód prowadząc własną Kancelarię Radcy Prawnego przy ul. Świętokrzyskiej 28a, 88-100&nbsp;Inowrocław
-            </p>
-          </div>
-        </div>
+        <h4 id="name">Wojciech Chmielewski</h4>
+        <h6 id="title">Radca Prawny</h6>
+        <p id="desc">Radca Prawny Wojciech Chmielewski odbywał aplikację przy Okręgowej Izbie Radców Prawnych w Bydgoszczy, a&nbsp;po złożeniu egzaminu radcowskiego z&nbsp;pomyślnym wynikiem został wpisany na listę radców prawnych przy Okręgowej
+          Izbie w&nbsp;Bydgoszczy. Praktykę
+          zawodową zdobywał pod patronatem Radcy Prawnego prowadzącego renomowaną kancelarię prawną. W chwili obecnej wykonuje zawód prowadząc własną Kancelarię Radcy Prawnego przy ul. Świętokrzyskiej 28a, 88-100&nbsp;Inowrocław
+        </p>
+      </div>
+    </div>
   </section>
   <!-- END OF WORKERS SECTION ------------->
 
@@ -246,14 +274,14 @@
               <span class="service-desc">
                 <ul>
                   <li>stwierdzenia nabycia spadku,</li>
-                    <li>testamentu,</li>
-                    <li>dziedziczenia ustawowego,</li>
-                    <li>zachowku,</li>
-                    <li>działu spadku,</li>
-                    <li>odrzucenia spadku,</li>
-                    <li>zabezpieczenie spadku,</li>
-                    <li>zrzeczenie się dziedziczenia,</li>
-                    <li>wydziedziczenie.</li>
+                  <li>testamentu,</li>
+                  <li>dziedziczenia ustawowego,</li>
+                  <li>zachowku,</li>
+                  <li>działu spadku,</li>
+                  <li>odrzucenia spadku,</li>
+                  <li>zabezpieczenie spadku,</li>
+                  <li>zrzeczenie się dziedziczenia,</li>
+                  <li>wydziedziczenie.</li>
                 </ul>
               </span>
             </div>
@@ -327,7 +355,8 @@
                   <li>pomoc przy tworzeniu lub likwidacji zarówno spółek osobowych i kapitałowych, jak i innych podmiotów gospodarczych, fundacji i stowarzyszeń,</li>
                   <li>pomoc w procesach łączenia, podziału i przekształceń spółek handlowych, podwyższania kapitału zakładowego, przymusowego wykupu akcji, umarzania akcji oraz nabywania akcji własnych przez spółki,</li>
                   <li>prowadzenie sporów sądowych &ndash; reprezentacja przed sądami powszechnymi, a także przed Sądem Najwyższym,</li>
-                  <li>obsługa korporacyjna spółek osobowych, jak i kapitałowych &ndash; przygotowywanie i prowadzenie walnych zgromadzeń akcjonariuszy/zgromadzeń wspólników, opracowanie projektów uchwał organów spółki, prowadzenie postępowań rejestrowych przed Krajowym Rejestrem Sądowym.</li>
+                  <li>obsługa korporacyjna spółek osobowych, jak i kapitałowych &ndash; przygotowywanie i prowadzenie walnych zgromadzeń akcjonariuszy/zgromadzeń wspólników, opracowanie projektów uchwał organów spółki, prowadzenie postępowań
+                    rejestrowych przed Krajowym Rejestrem Sądowym.</li>
                 </ul>
               </span>
             </div>
@@ -416,19 +445,19 @@
               <span class="service-desc">
                 <ul>
                   <li>Dla pacjentów:
-											<ul>
-												<li>pomoc prawna w zakresie odpowiedzialności za błąd w sztuce lekarskiej,</li>
-												<li>zadośćuczynienie za krzywdę związaną z niewłaściwym leczeniem.</li>
-											</ul>
-										</li>
-										<li>Dla lekarzy:
-											<ul>
-												<li>obsługa prawna indywidualnych praktyk lekarskich,</li>
-												<li>reprezentacja przed sądami lekarskimi,</li>
-												<li>ochrona przed roszczeniami,</li>
-												<li>ochrona dóbr osobistych.</li>
-											</ul>
-										</li>
+                    <ul>
+                      <li>pomoc prawna w zakresie odpowiedzialności za błąd w sztuce lekarskiej,</li>
+                      <li>zadośćuczynienie za krzywdę związaną z niewłaściwym leczeniem.</li>
+                    </ul>
+                  </li>
+                  <li>Dla lekarzy:
+                    <ul>
+                      <li>obsługa prawna indywidualnych praktyk lekarskich,</li>
+                      <li>reprezentacja przed sądami lekarskimi,</li>
+                      <li>ochrona przed roszczeniami,</li>
+                      <li>ochrona dóbr osobistych.</li>
+                    </ul>
+                  </li>
                 </ul>
               </span>
             </div>
@@ -565,17 +594,23 @@
 
         <div class="four columns">
           <a href=""><img class="u-pull-left" src="images/document.png" alt="ikona dokumentu"></a>
-          <a href=""><h6>Adwokat - pełnomocnictwo do reprezentowania klienta przed Sądami i organami </h6></a>
+          <a href="">
+            <h6>Adwokat - pełnomocnictwo do reprezentowania klienta przed Sądami i organami </h6>
+          </a>
         </div>
 
         <div class="four columns">
           <a href=""><img class="u-pull-left" src="images/document.png" alt="ikona dokumentu"></a>
-          <a href=""><h6>Adwokat - upoważnienie do obrony niezbędne do prowadzenia sprawy przez kancelarię</h6></a>
+          <a href="">
+            <h6>Adwokat - upoważnienie do obrony niezbędne do prowadzenia sprawy przez kancelarię</h6>
+          </a>
         </div>
 
         <div class="four columns">
           <a href=""><img class="u-pull-left" src="images/document.png" alt="ikona dokumentu"></a>
-          <a href=""><h6>Radca - pełnomocnictwo do reprezentowania klienta przed Sądami i organami </h6></a>
+          <a href="">
+            <h6>Radca - pełnomocnictwo do reprezentowania klienta przed Sądami i organami </h6>
+          </a>
         </div>
 
       </div>
@@ -584,17 +619,23 @@
 
         <div class="four columns">
           <a href=""><img class="u-pull-left" src="images/document.png" alt="ikona dokumentu"></a>
-          <a href=""><h6>Radca - upoważnienie do obrony niezbędne do prowadzenia sprawy przez kancelarię</h6></a>
+          <a href="">
+            <h6>Radca - upoważnienie do obrony niezbędne do prowadzenia sprawy przez kancelarię</h6>
+          </a>
         </div>
 
         <div class="four columns">
           <a href=""><img class="u-pull-left" src="images/document.png" alt="ikona dokumentu"></a>
-          <a href=""><h6>Klauzula informacyjna dla klientów kancelarii w związku ze zleceniem prowadzenia sprawy</h6></a>
+          <a href="">
+            <h6>Klauzula informacyjna dla klientów kancelarii w związku ze zleceniem prowadzenia sprawy</h6>
+          </a>
         </div>
 
         <div class="four columns">
           <a href=""><img class="u-pull-left" src="images/document.png" alt="ikona dokumentu"></a>
-          <a href=""><h6>Oświadczenie niezbędne do uzyskania zwolnienia od ponoszenia kosztów sądowych</h6></a>
+          <a href="">
+            <h6>Oświadczenie niezbędne do uzyskania zwolnienia od ponoszenia kosztów sądowych</h6>
+          </a>
         </div>
 
       </div>
@@ -633,7 +674,8 @@
   <section class="contact" id="contact">
     <div class="row">
       <div class="six columns">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2412.650559487659!2d18.25669!3d52.792609!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4703508d01791d51%3A0x42fbcf3cfa3ee41e!2s%C5%9Awi%C4%99tokrzyska+28%2C+88-110+Inowroc%C5%82aw%2C+Polska!5e0!3m2!1spl!2s!4v1424301985980" frameborder="0" class="map"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2412.650559487659!2d18.25669!3d52.792609!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4703508d01791d51%3A0x42fbcf3cfa3ee41e!2s%C5%9Awi%C4%99tokrzyska+28%2C+88-110+Inowroc%C5%82aw%2C+Polska!5e0!3m2!1spl!2s!4v1424301985980"
+          frameborder="0" class="map"></iframe>
       </div>
 
       <div class="six columns contact-data">
@@ -672,8 +714,8 @@
           <img src="images/logo_kirp.png" alt="">
           <img class="second-logo" src="images/logo_adwokatura.png" alt="">
         </div>
-        </div>
       </div>
+    </div>
   </footer>
   <!-- END OF SECTION CONTACT --------------------->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
