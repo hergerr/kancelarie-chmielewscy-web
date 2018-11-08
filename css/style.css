@@ -473,8 +473,10 @@ header h6 {
 /* END OF HEADER -------------------------*/
 /* ABOUT US ------------------------------*/
 .services {
+  background-color: #f4f4f4;
   margin-top: -7px;
   border-top: 3px solid #1D5F9C;
+  padding-bottom: 100px;
 }
 
 .services span,
@@ -695,7 +697,6 @@ header h6 {
 /* end of services */
 /* workers */
 .workers {
-  margin-top: 100px;
 }
 
 .workers {
