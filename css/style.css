@@ -86,6 +86,7 @@ h6 {
   font-family: 'Lora', serif;
 }
 
+
 a:hover {
   transition: 0.2s color ease-in-out;
 }
@@ -169,6 +170,10 @@ header h6 {
   margin: 0 auto;
   left: 0;
   right: 0;
+}
+
+.main-h1{
+  display: none;
 }
 
 #slider {
