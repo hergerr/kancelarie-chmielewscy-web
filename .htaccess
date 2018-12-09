@@ -12,3 +12,12 @@ Header set Cache-Control "max-age=604800"
 order allow,deny
 deny from all
 </Files>
+
+<ifModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/xml text/css text/plain
+  AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript application/json
+</ifModule>
+
+<ifModule mod_headers.c>
+ Header set Connection keep-alive
+</ifModule>
