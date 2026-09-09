@@ -51,6 +51,11 @@
     top: 50vh;
   }
 
+  .slider-photo-standing {
+    transform: scaleY(1.25);
+    transform-origin: center top;
+  }
+
   .scroll {
     right: 25px;
     bottom: 25px;
