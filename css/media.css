@@ -52,7 +52,7 @@
   }
 
   .slider-photo-standing {
-    transform: scaleY(1.25);
+    transform: scale(1.25);
     transform-origin: center top;
   }
 
