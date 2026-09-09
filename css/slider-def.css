@@ -26,9 +26,9 @@
   width: 400%;
   height: 100%;
   position: relative;
-  -webkit-animation: slide 30s infinite;
-  -moz-animation: slide 30s infinite;
-  animation: slide 30s infinite;
+  -webkit-animation: slide 300s infinite;
+  -moz-animation: slide 300s infinite;
+  animation: slide 300s infinite;
 }
 
 .slider {

@@ -126,6 +126,19 @@
   .contact p {
     padding-bottom: 40px;
   }
+
+  .team-member,
+  .team-member-reverse {
+    flex-direction: column;
+  }
+
+  .team-member-photo {
+    height: 320px;
+  }
+
+  .team-member-info {
+    padding: 30px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

@@ -34,15 +34,15 @@
 
   <!-- CSS -->
 
-  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 
-  <link href="css/skeleton.min.css" rel="stylesheet">
+  <link href="css/skeleton.css" rel="stylesheet">
 
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
-  <link href="css/media.min.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
 
-  <link href="css/slider-def.min.css" rel="stylesheet">
+  <link href="css/slider-def.css" rel="stylesheet">
 
 
 
@@ -224,7 +224,7 @@
 
             <div class="images">
 
-              <img class="slider-photo" src="images/slider1-min.jpg" alt="surgeons on work">
+              <img class="slider-photo" src="images/slider1-min.jpg" alt="Adwokat Ewa Frankiewicz-Chmielewska">
 
             </div>
 
@@ -260,7 +260,7 @@
 
             <div class="images">
 
-              <img class="slider-photo" src="images/slider4-min.jpg" alt="doctor">
+              <img class="slider-photo" src="images/slider4-min.jpg" alt="Adwokat Ewa Frankiewicz-Chmielewska">
 
             </div>
 
@@ -464,17 +464,25 @@
 
   <section class="workers" id="workers">
 
-    <div class="container">
+    <div class="team-member">
 
-      <div class="twelve columns images-of-workers">
+      <div class="team-member-photo">
 
-        <div class="lawyer-image-inactive">
+        <img src="images/worker-1-min.jpg" alt="Ewa Frankiewicz-Chmielewska - adwokat">
 
-          <img id="lawyer-image" src="images/worker-1-overlay-min.jpg" alt="Ewa Frankiewicz-Chmielewska - adwokat">
+      </div>
+
+      <div class="team-member-info">
+
+        <div class="container">
+
+          <h4>Ewa Frankiewicz-Chmielewska</h4>
+
+          <h6>Adwokat</h6>
+
+          <p>Adwokat Ewa Frankiewicz-Chmielewska odbyła aplikację przy Okręgowej Radzie Adwokackiej w&nbsp;Bydgoszczy, a&nbsp;po złożeniu egzaminu adwokackiego z&nbsp;pomyślnym wynikiem została wpisana na listę adwokatów przy Okręgowej Radzie Adwokackiej w&nbsp;Bydgoszczy. Praktykę zawodową zdobyła pod patronatem Adwokata prowadzącego renomowaną kancelarię prawną.</p>
 
         </div>
-
-        <img id="legal-counsel-image" class="legal-counsel-image-inactive" src="images/worker-2-min.jpg" alt="Wojciech Chmielewski - adwokat">
 
       </div>
 
@@ -482,27 +490,25 @@
 
 
 
-    <div style="clear:both;"></div>
+    <div class="team-member team-member-reverse">
 
+      <div class="team-member-photo">
 
+        <img src="images/worker-2-min.jpg" alt="Wojciech Chmielewski - radca prawny">
 
-    <div class="legal-counsel-description">
+      </div>
 
-      <div class="container">
+      <div class="team-member-info">
 
+        <div class="container">
 
+          <h4>Wojciech Chmielewski</h4>
 
-        <h4 id="name">Wojciech Chmielewski</h4>
+          <h6>Radca Prawny</h6>
 
-        <h6 id="title">Radca Prawny</h6>
+          <p>Radca Prawny Wojciech Chmielewski odbywał aplikację przy Okręgowej Izbie Radców Prawnych w&nbsp;Bydgoszczy, a&nbsp;po złożeniu egzaminu radcowskiego z&nbsp;pomyślnym wynikiem został wpisany na listę radców prawnych przy Okręgowej Izbie w&nbsp;Bydgoszczy. Praktykę zawodową zdobywał pod patronatem Radcy Prawnego prowadzącego renomowaną kancelarię prawną. W chwili obecnej wykonuje zawód prowadząc własną Kancelarię Radcy Prawnego przy ul. Świętokrzyskiej 28a, 88-100&nbsp;Inowrocław.</p>
 
-        <p id="desc">Radca Prawny Wojciech Chmielewski odbywał aplikację przy Okręgowej Izbie Radców Prawnych w Bydgoszczy, a&nbsp;po złożeniu egzaminu radcowskiego z&nbsp;pomyślnym wynikiem został wpisany na listę radców prawnych przy Okręgowej
-
-          Izbie w&nbsp;Bydgoszczy. Praktykę
-
-          zawodową zdobywał pod patronatem Radcy Prawnego prowadzącego renomowaną kancelarię prawną. W chwili obecnej wykonuje zawód prowadząc własną Kancelarię Radcy Prawnego przy ul. Świętokrzyskiej 28a, 88-100&nbsp;Inowrocław
-
-        </p>
+        </div>
 
       </div>
 
@@ -1496,159 +1502,139 @@
 
   <!-- END OF SECTION CONTACT --------------------->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- smooth scroll -->
 
-  <script src="js/jquery.scrollTo.min.js"></script>
+  <script>
 
+    function smoothScrollTo(target, duration) {
 
+      var startY = window.pageYOffset;
 
-  <!-- changing pictures -->
+      var targetY = typeof target === "number" ?
 
-  <script type="text/javascript">
+        target :
 
-    window.onload = init;
+        target.getBoundingClientRect().top + startY;
 
-
-
-    function init() {
-
-
-
-      $("#lawyer-image").mouseover(function() {
-
-        $("#name").html("Ewa Frankiewicz-Chmielewska");
-
-        $("#title").html("Adwokat");
-
-        $("#desc").html(
-
-          "Adwokat Ewa Frankiewicz-Chmielewska odbyła aplikację przy Okręgowej Radzie Adwokackiej w Bydgoszczy, a po złożeniu egzaminu adwokackiego z pomyślnym wynikiem została wpisana na listę adwokatów przy Okręgowej Radzie Adwokackiej w Bydgoszczy. Praktykę zawodową zdobyła pod patronatem Adwokata prowadzącego renomowaną kancelarię prawną."
-
-        );
-
-        $("#lawyer-image").attr("src", "images/worker-1-min.jpg");
-
-        $("#legal-counsel-image").attr("src", "images/worker-2-overlay-min.jpg")
+      var diff = targetY - startY;
 
 
 
-      });
+      if (!duration) {
+
+        window.scrollTo(0, targetY);
+
+        return;
+
+      }
 
 
 
-      $("#legal-counsel-image").mouseover(function() {
+      var start = null;
 
-        $("#name").html("Wojciech Chmielewski");
 
-        $("#title").html("Radca prawny");
 
-        $("#desc").html(
+      function step(timestamp) {
 
-          "Radca Prawny Wojciech Chmielewski odbywał aplikację przy Okręgowej Izbie Radców Prawnych w Bydgoszczy, a po złożeniu egzaminu radcowskiego z pomyślnym wynikiem został wpisany na listę radców prawnych przy Okręgowej Izbie w Bydgoszczy. Praktykę zawodową zdobywał pod patronatem Radcy Prawnego prowadzącego renomowaną kancelarię prawną. W chwili obecnej wykonuje zawód prowadząc własną Kancelarię Radcy Prawnego przy ul. Świętokrzyskiej 28a, <br>88-100 Inowrocław."
+        if (start === null) start = timestamp;
 
-        );
+        var time = timestamp - start;
 
-        $("#lawyer-image").attr("src", "images/worker-1-overlay-min.jpg");
+        var percent = Math.min(time / duration, 1);
 
-        $("#legal-counsel-image").attr("src", "images/worker-2-min.jpg")
+        var eased = percent < 0.5 ?
+
+          2 * percent * percent :
+
+          -1 + (4 - 2 * percent) * percent;
+
+        window.scrollTo(0, startY + diff * eased);
+
+        if (time < duration) requestAnimationFrame(step);
+
+      }
+
+
+
+      requestAnimationFrame(step);
+
+    }
+
+
+
+    function bindScrollLink(id, selector, duration) {
+
+      var link = document.getElementById(id);
+
+      var target = document.querySelector(selector);
+
+      if (!link || !target) return;
+
+      link.addEventListener("click", function(e) {
+
+        e.preventDefault();
+
+        smoothScrollTo(target, duration);
 
       });
 
     }
 
-  </script>
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+
+      smoothScrollTo(0, 0);
 
 
 
-  <!-- smooth scroll -->
+      bindScrollLink("link1", ".workers", 1500);
 
-  <script>
+      bindScrollLink("link2", ".services", 800);
 
-    jQuery(function($) {
+      bindScrollLink("link3", ".contact", 3500);
 
-      $.scrollTo(0);
+      bindScrollLink("link4", ".files", 3000);
 
+      bindScrollLink("link5", ".services-for-individuals", 2100);
 
-
-      $('#link1').click(function() {
-
-        $.scrollTo($('.workers'), 1500);
-
-      });
-
-      $('#link2').click(function() {
-
-        $.scrollTo($('.services'), 800);
-
-      });
-
-      $('#link3').click(function() {
-
-        $.scrollTo($('.contact'), 3500);
-
-      });
-
-      $('#link4').click(function() {
-
-        $.scrollTo($('.files'), 3000);
-
-      });
-
-      $('#link5').click(function() {
-
-        $.scrollTo($('.services-for-individuals'), 2100);
-
-      });
-
-      $('#link6').click(function() {
-
-        $.scrollTo($('.services-for-enterprises'), 2900);
-
-      });
+      bindScrollLink("link6", ".services-for-enterprises", 2900);
 
 
 
-      $('#hamburger-workers').click(function() {
+      bindScrollLink("hamburger-workers", ".workers", 1000);
 
-        $.scrollTo($('.workers'), 1000);
+      bindScrollLink("hamburger-services", ".services", 1000);
+
+      bindScrollLink("hamburger-contact", ".contact", 1000);
+
+      bindScrollLink("hamburger-files", ".files", 1000);
+
+
+
+      var scrollButton = document.querySelector(".scroll");
+
+      if (scrollButton) {
+
+        scrollButton.addEventListener("click", function(e) {
+
+          e.preventDefault();
+
+          smoothScrollTo(document.querySelector(".top-nav"), 2000);
+
+        });
+
+      }
+
+
+
+      window.addEventListener("scroll", function() {
+
+        if (!scrollButton) return;
+
+        scrollButton.style.display = window.pageYOffset > 300 ? "block" : "none";
 
       });
-
-      $('#hamburger-services').click(function() {
-
-        $.scrollTo($('.services'), 1000);
-
-      });
-
-      $('#hamburger-contact').click(function() {
-
-        $.scrollTo($('.contact'), 1000);
-
-      });
-
-      $('#hamburger-files').click(function() {
-
-        $.scrollTo($('.files'), 1000);
-
-      });
-
-
-
-      $('.scroll').click(function() {
-
-        $.scrollTo($('.top-nav'), 2000);
-
-      });
-
-    });
-
-
-
-    $(window).scroll(function() {
-
-      if ($(this).scrollTop() > 300) $('.scroll').fadeIn();
-
-      else $('.scroll').fadeOut();
 
     });
 
@@ -1660,11 +1646,11 @@
 
   <script>
 
-    $(window).scroll(function() {
+    window.addEventListener("scroll", function() {
 
-      var scroll = $(window).scrollTop();
+      var scroll = window.pageYOffset;
 
-      var windowWidth = $(window).width();
+      var windowWidth = window.innerWidth;
 
 
 
@@ -1731,14 +1717,6 @@
       uncheck()
 
     };
-
-  </script>
-
-
-
-  <script>
-
-
 
   </script>
 
